@@ -95,6 +95,11 @@ class Config:
         self.strategic_llm_provider, self.strategic_llm_model = self.parse_llm(self.strategic_llm)
         self.reasoning_effort = self.parse_reasoning_effort(os.getenv("REASONING_EFFORT"))
 
+        # Per-tier base URLs (already set via _set_attributes from env/config)
+        self.fast_llm_base_url = getattr(self, "fast_llm_base_url", None)
+        self.smart_llm_base_url = getattr(self, "smart_llm_base_url", None)
+        self.strategic_llm_base_url = getattr(self, "strategic_llm_base_url", None)
+
     def _handle_deprecated_attributes(self) -> None:
         """Handle deprecated configuration attributes with warnings."""
         if os.getenv("EMBEDDING_PROVIDER") is not None:

@@ -126,12 +126,14 @@ class TestGenerateReportPrompt:
             query="renewable energy",
             context="Solar and wind data.",
             tone="Objective",
+            current_date="March 31, 2026",
         )
         assert len(messages) == 2
         human_content = messages[1].content
         assert "renewable energy" in human_content
         assert "Solar and wind data." in human_content
         assert "Objective" in human_content
+        assert "March 31, 2026" in human_content
 
 
 # ---------------------------------------------------------------------------

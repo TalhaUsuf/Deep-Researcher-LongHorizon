@@ -9,6 +9,9 @@ class BaseConfig(TypedDict):
     FAST_LLM: str
     SMART_LLM: str
     STRATEGIC_LLM: str
+    FAST_LLM_BASE_URL: Union[str, None]
+    SMART_LLM_BASE_URL: Union[str, None]
+    STRATEGIC_LLM_BASE_URL: Union[str, None]
     FAST_TOKEN_LIMIT: int
     SMART_TOKEN_LIMIT: int
     STRATEGIC_TOKEN_LIMIT: int
@@ -32,6 +35,7 @@ class BaseConfig(TypedDict):
     DOC_PATH: str
     PROMPT_FAMILY: str
     LLM_KWARGS: dict
+    EMBEDDING_BASE_URL: Union[str, None]
     EMBEDDING_KWARGS: dict
     VERBOSE: bool
     DEEP_RESEARCH_CONCURRENCY: int

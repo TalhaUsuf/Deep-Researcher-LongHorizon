@@ -67,13 +67,12 @@ class TestTrimContext:
         result = _trim_context(items, max_words=100)
         assert result == items
 
-    def test_trims_to_limit_keeping_most_recent(self):
-        # Each item is 3 words. With max_words=5, only the last two would NOT
-        # fit together (3+3=6 > 5), so only the very last item fits.
+    def test_trims_to_limit_keeping_earliest(self):
+        # Each item is 3 words. With max_words=5, only the first item fits.
         items = ["aaa bbb ccc", "ddd eee fff", "ggg hhh iii"]
         result = _trim_context(items, max_words=5)
-        # reversed iteration: "ggg hhh iii" (3 words, ok), "ddd eee fff" (3+3=6 > 5, break)
-        assert result == ["ggg hhh iii"]
+        # forward iteration: "aaa bbb ccc" (3 words, ok), "ddd eee fff" (3+3=6 > 5, break)
+        assert result == ["aaa bbb ccc"]
 
     def test_trims_large_input(self):
         # Build items that total well over MAX_CONTEXT_WORDS
@@ -402,7 +401,7 @@ class TestExecuteResearch:
 
         llm_service.get_strategic_llm.assert_called_with(
             temperature=0.4,
-            max_tokens=1000,
+            max_tokens=4000,
             reasoning_effort="high",
         )
 
@@ -614,7 +613,7 @@ class TestAssembleFinalContext:
 @pytest.mark.asyncio
 class TestGenerateReport:
     async def test_returns_report_string(self, base_state, graph_config, llm_service):
-        llm_service.get_smart_llm = MagicMock(return_value=MagicMock())
+        llm_service.get_strategic_llm = MagicMock(return_value=MagicMock())
         llm_service.invoke = AsyncMock(return_value="# Final Report\nContent here.")
 
         base_state["final_context"] = "assembled context"
@@ -623,21 +622,21 @@ class TestGenerateReport:
 
         assert result["report"] == "# Final Report\nContent here."
 
-    async def test_uses_smart_llm_with_correct_params(self, base_state, graph_config, llm_service):
-        llm_service.get_smart_llm = MagicMock(return_value=MagicMock())
+    async def test_uses_strategic_llm_with_correct_params(self, base_state, graph_config, llm_service):
+        llm_service.get_strategic_llm = MagicMock(return_value=MagicMock())
         llm_service.invoke = AsyncMock(return_value="report")
 
         base_state["final_context"] = "ctx"
 
         await generate_report(base_state, graph_config)
 
-        llm_service.get_smart_llm.assert_called_once_with(
-            temperature=0.4, max_tokens=4000,
+        llm_service.get_strategic_llm.assert_called_once_with(
+            temperature=0.4, max_tokens=6000,
         )
 
     async def test_returns_ai_message_with_report(self, base_state, graph_config, llm_service):
         report_text = "# Deep Research Report\nFindings here."
-        llm_service.get_smart_llm = MagicMock(return_value=MagicMock())
+        llm_service.get_strategic_llm = MagicMock(return_value=MagicMock())
         llm_service.invoke = AsyncMock(return_value=report_text)
 
         base_state["final_context"] = "assembled context"
@@ -652,7 +651,7 @@ class TestGenerateReport:
 
     async def test_passes_query_context_tone_to_prompt(self, base_state, graph_config, llm_service):
         mock_llm = MagicMock()
-        llm_service.get_smart_llm = MagicMock(return_value=mock_llm)
+        llm_service.get_strategic_llm = MagicMock(return_value=mock_llm)
         llm_service.invoke = AsyncMock(return_value="report")
 
         base_state["query"] = "my query"
@@ -663,11 +662,12 @@ class TestGenerateReport:
             mock_prompt.format_messages = MagicMock(return_value=["formatted"])
             await generate_report(base_state, graph_config)
 
-            mock_prompt.format_messages.assert_called_once_with(
-                query="my query",
-                context="my context",
-                tone="Formal",
-            )
+            mock_prompt.format_messages.assert_called_once()
+            call_kwargs = mock_prompt.format_messages.call_args[1]
+            assert call_kwargs["query"] == "my query"
+            assert call_kwargs["context"] == "my context"
+            assert call_kwargs["tone"] == "Formal"
+            assert "current_date" in call_kwargs
             llm_service.invoke.assert_called_once_with(mock_llm, ["formatted"])
 
 

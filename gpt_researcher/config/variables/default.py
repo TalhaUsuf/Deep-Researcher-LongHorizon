@@ -7,6 +7,9 @@ DEFAULT_CONFIG: BaseConfig = {
     "FAST_LLM": "openai:gpt-4o-mini",
     "SMART_LLM": "openai:gpt-4.1",  # Has support for long responses (2k+ words).
     "STRATEGIC_LLM": "openai:o4-mini",  # Can be used with o1 or o3, please note it will make tasks slower.
+    "FAST_LLM_BASE_URL": None,
+    "SMART_LLM_BASE_URL": None,
+    "STRATEGIC_LLM_BASE_URL": None,
     "FAST_TOKEN_LIMIT": 3000,
     "SMART_TOKEN_LIMIT": 6000,
     "STRATEGIC_TOKEN_LIMIT": 4000,
@@ -30,6 +33,7 @@ DEFAULT_CONFIG: BaseConfig = {
     "DOC_PATH": "./my-docs",
     "PROMPT_FAMILY": "default",
     "LLM_KWARGS": {},
+    "EMBEDDING_BASE_URL": None,
     "EMBEDDING_KWARGS": {},
     "VERBOSE": False,
     # Deep research specific settings

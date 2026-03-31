@@ -43,6 +43,11 @@ def mock_config():
     cfg.fast_llm_model = "gpt-4o-mini"
     cfg.llm_kwargs = {}
     cfg.reasoning_effort = "medium"
+    cfg.fast_llm_base_url = None
+    cfg.smart_llm_base_url = None
+    cfg.strategic_llm_base_url = None
+    cfg.strategic_token_limit = 4000
+    cfg.smart_token_limit = 6000
     cfg.deep_research_breadth = 4
     cfg.deep_research_depth = 2
     cfg.deep_research_concurrency = 2
