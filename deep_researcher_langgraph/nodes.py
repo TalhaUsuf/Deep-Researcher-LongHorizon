@@ -82,13 +82,18 @@ def _count_words(text: Any) -> int:
 
 
 def _trim_context(context_list: List[str], max_words: int = MAX_CONTEXT_WORDS) -> List[str]:
-    """Trim context list to stay within word limit, keeping most recent items."""
+    """Trim context list to stay within word limit, keeping earliest items first.
+
+    Learnings with citations appear at the front of the list (from
+    assemble_final_context), so forward iteration preserves curated
+    insights over verbose raw scrape text.
+    """
     total_words = 0
     trimmed = []
-    for item in reversed(context_list):
+    for item in context_list:
         words = _count_words(item)
         if total_words + words <= max_words:
-            trimmed.insert(0, item)
+            trimmed.append(item)
             total_words += words
         else:
             break
@@ -121,12 +126,16 @@ async def generate_research_plan(state: DeepResearchState, config: RunnableConfi
     query = state["query"]
     breadth = state.get("breadth", 4)
 
+    # Truncate query for retriever search (Tavily has a 400 char limit).
+    # The full query is still used for LLM prompts.
+    search_query = query[:400] if len(query) > 400 else query
+
     # Run initial search across all configured retrievers (matches original)
     retrievers = get_retrievers(state.get("headers", {}), cfg)
     all_search_results: List[dict] = []
     for retriever_class in retrievers:
         try:
-            results = await get_search_results(query, retriever_class)
+            results = await get_search_results(search_query, retriever_class)
             all_search_results.extend(results)
         except Exception as e:
             logger.warning(f"Error with retriever {retriever_class.__name__}: {e}")
@@ -260,11 +269,12 @@ async def execute_research(state: DeepResearchState, config: RunnableConfig) -> 
       - Uses asyncio.Semaphore with concurrency_limit (original default 2)
       - For each query, spawns a GPTResearcher instance
       - Propagates MCP config, visited URLs, tone, headers
-      - Extracts learnings via strategic LLM (temperature=0.4, max_tokens=1000,
+      - Extracts learnings via strategic LLM (temperature=0.4,
         ReasoningEfforts.High — matching original process_research_results)
       - Handles per-query errors gracefully (continues with successful results)
     """
     llm_service = _get_llm_service(config)
+    cfg = _get_config(config)
     search_queries = state["search_queries"]
     concurrency_limit = state.get("concurrency_limit", 2)
     visited_urls: Set[str] = set(state.get("all_visited_urls", []))
@@ -309,7 +319,7 @@ async def execute_research(state: DeepResearchState, config: RunnableConfig) -> 
 
                 strategic_llm = llm_service.get_strategic_llm(
                     temperature=0.4,
-                    max_tokens=1000,
+                    max_tokens=cfg.strategic_token_limit,
                     reasoning_effort=ReasoningEfforts.High.value,
                 )
                 analysis: ResearchAnalysis = await llm_service.invoke_structured(
@@ -509,15 +519,19 @@ async def generate_report(state: DeepResearchState, config: RunnableConfig) -> D
         )
 
     llm_service = _get_llm_service(config)
-    smart_llm = llm_service.get_smart_llm(temperature=0.4, max_tokens=4000)
+    cfg = _get_config(config)
+    report_llm = llm_service.get_strategic_llm(
+        temperature=0.4, max_tokens=cfg.smart_token_limit,
+    )
 
     messages = GENERATE_REPORT_PROMPT.format_messages(
         query=state["query"],
         context=final_context,
         tone=state.get("tone", "Objective"),
+        current_date=datetime.now().strftime("%B %d, %Y"),
     )
 
-    report = await llm_service.invoke(smart_llm, messages)
+    report = await llm_service.invoke(report_llm, messages)
 
     if not report or not report.strip():
         raise RuntimeError("Report generation returned empty content from the LLM.")

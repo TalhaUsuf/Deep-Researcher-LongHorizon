@@ -173,6 +173,59 @@ class TestLlmGetters:
         assert call_args[0][0] == mock_config.fast_llm_provider
         assert call_args[1]["model"] == mock_config.fast_llm_model
 
+    @patch(f"{MODULE}.GenericLLMProvider")
+    def test_get_strategic_llm_passes_base_url(self, mock_provider_cls, mock_config, token_callback):
+        mock_config.strategic_llm_base_url = "http://example.com/v1"
+        service = LLMService(mock_config, token_callback)
+        mock_provider_cls.from_provider.return_value.llm = MagicMock()
+
+        service.get_strategic_llm()
+
+        call_kwargs = mock_provider_cls.from_provider.call_args[1]
+        assert call_kwargs["openai_api_base"] == "http://example.com/v1"
+
+    @patch(f"{MODULE}.GenericLLMProvider")
+    def test_get_smart_llm_passes_base_url(self, mock_provider_cls, mock_config, token_callback):
+        mock_config.smart_llm_base_url = "http://example.com/v1"
+        service = LLMService(mock_config, token_callback)
+        mock_provider_cls.from_provider.return_value.llm = MagicMock()
+
+        service.get_smart_llm()
+
+        call_kwargs = mock_provider_cls.from_provider.call_args[1]
+        assert call_kwargs["openai_api_base"] == "http://example.com/v1"
+
+    @patch(f"{MODULE}.GenericLLMProvider")
+    def test_get_fast_llm_passes_base_url(self, mock_provider_cls, mock_config, token_callback):
+        mock_config.fast_llm_base_url = "http://example.com/v1"
+        service = LLMService(mock_config, token_callback)
+        mock_provider_cls.from_provider.return_value.llm = MagicMock()
+
+        service.get_fast_llm()
+
+        call_kwargs = mock_provider_cls.from_provider.call_args[1]
+        assert call_kwargs["openai_api_base"] == "http://example.com/v1"
+
+    @patch(f"{MODULE}.GenericLLMProvider")
+    def test_base_url_not_passed_when_none(self, mock_provider_cls, llm_service):
+        mock_provider_cls.from_provider.return_value.llm = MagicMock()
+
+        llm_service.get_fast_llm()
+
+        call_kwargs = mock_provider_cls.from_provider.call_args[1]
+        assert "openai_api_base" not in call_kwargs
+
+    @patch(f"{MODULE}.GenericLLMProvider")
+    def test_explicit_kwarg_overrides_config_base_url(self, mock_provider_cls, mock_config, token_callback):
+        mock_config.fast_llm_base_url = "http://config-url/v1"
+        service = LLMService(mock_config, token_callback)
+        mock_provider_cls.from_provider.return_value.llm = MagicMock()
+
+        service.get_fast_llm(openai_api_base="http://override-url/v1")
+
+        call_kwargs = mock_provider_cls.from_provider.call_args[1]
+        assert call_kwargs["openai_api_base"] == "http://override-url/v1"
+
 
 # ---------------------------------------------------------------------------
 # get_callbacks

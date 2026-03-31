@@ -93,6 +93,9 @@ class LLMService:
         **kwargs: Any,
     ) -> BaseChatModel:
         """LLM for complex reasoning: query generation, research analysis."""
+        base_url = getattr(self._config, "strategic_llm_base_url", None)
+        if base_url and "openai_api_base" not in kwargs:
+            kwargs["openai_api_base"] = base_url
         return self._build_llm(
             self._config.strategic_llm_provider,
             self._config.strategic_llm_model,
@@ -109,6 +112,9 @@ class LLMService:
         **kwargs: Any,
     ) -> BaseChatModel:
         """LLM for report writing and general tasks."""
+        base_url = getattr(self._config, "smart_llm_base_url", None)
+        if base_url and "openai_api_base" not in kwargs:
+            kwargs["openai_api_base"] = base_url
         return self._build_llm(
             self._config.smart_llm_provider,
             self._config.smart_llm_model,
@@ -124,6 +130,9 @@ class LLMService:
         **kwargs: Any,
     ) -> BaseChatModel:
         """LLM for quick, low-cost operations."""
+        base_url = getattr(self._config, "fast_llm_base_url", None)
+        if base_url and "openai_api_base" not in kwargs:
+            kwargs["openai_api_base"] = base_url
         return self._build_llm(
             self._config.fast_llm_provider,
             self._config.fast_llm_model,

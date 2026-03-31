@@ -18,9 +18,12 @@ import uuid
 from datetime import timedelta
 from typing import Any, Callable, Dict, Optional, Set
 
+from dotenv import load_dotenv
 from langgraph.checkpoint.base import BaseCheckpointSaver
 
 from gpt_researcher.config.config import Config
+
+load_dotenv()
 
 from .callbacks import TokenUsageCallbackHandler
 from .graph import build_deep_research_graph

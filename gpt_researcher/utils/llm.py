@@ -38,6 +38,33 @@ def get_llm(llm_provider: str, **kwargs):
     return GenericLLMProvider.from_provider(llm_provider, **kwargs)
 
 
+def _resolve_openai_base_url(model: str) -> str | None:
+    """Resolve the OpenAI-compatible base URL for a given model.
+
+    Checks per-tier env vars (FAST_LLM_BASE_URL, SMART_LLM_BASE_URL,
+    STRATEGIC_LLM_BASE_URL) by matching the model against the configured
+    LLM tier, then falls back to the global OPENAI_BASE_URL.
+    """
+    fast_model = (os.environ.get("FAST_LLM") or "").split(":", 1)[-1]
+    smart_model = (os.environ.get("SMART_LLM") or "").split(":", 1)[-1]
+    strategic_model = (os.environ.get("STRATEGIC_LLM") or "").split(":", 1)[-1]
+
+    if model and model == strategic_model:
+        url = os.environ.get("STRATEGIC_LLM_BASE_URL")
+        if url:
+            return url
+    if model and model == smart_model:
+        url = os.environ.get("SMART_LLM_BASE_URL")
+        if url:
+            return url
+    if model and model == fast_model:
+        url = os.environ.get("FAST_LLM_BASE_URL")
+        if url:
+            return url
+
+    return os.environ.get("OPENAI_BASE_URL")
+
+
 async def create_chat_completion(
         messages: list[dict[str, str]],
         model: str | None = None,
@@ -90,8 +117,9 @@ async def create_chat_completion(
         provider_kwargs['temperature'] = None
         provider_kwargs['max_tokens'] = None
 
-    if llm_provider == "openai":
-        base_url = os.environ.get("OPENAI_BASE_URL", None)
+    if llm_provider == "openai" and "openai_api_base" not in provider_kwargs:
+        # Check per-tier base URLs first, then fall back to global OPENAI_BASE_URL
+        base_url = _resolve_openai_base_url(model)
         if base_url:
             provider_kwargs['openai_api_base'] = base_url
 
@@ -177,6 +205,11 @@ async def construct_subtopics(
         else:
             provider_kwargs['temperature'] = config.temperature
             provider_kwargs['max_tokens'] = config.smart_token_limit
+
+        if config.smart_llm_provider == "openai" and "openai_api_base" not in provider_kwargs:
+            base_url = _resolve_openai_base_url(config.smart_llm_model)
+            if base_url:
+                provider_kwargs['openai_api_base'] = base_url
 
         provider = get_llm(config.smart_llm_provider, **provider_kwargs)
 

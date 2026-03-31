@@ -7,6 +7,10 @@ import sys
 import warnings
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Suppress Pydantic V2 migration warnings
 warnings.filterwarnings("ignore", message="Valid config keys have changed in V2")
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
