@@ -1,0 +1,1206 @@
+/Users/apple/miniconda3/lib/python3.13/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.1) or chardet (7.4.0.post2)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Failed to import MCPRetriever: No module named 'langchain_mcp_adapters'
+INFO:     [20:01:47] 🔍 Starting the research task for '(open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)'...
+INFO:     [20:01:47] 🤖 AI Research Agent
+INFO:     [20:01:47] 🌐 Browsing the web to learn more about the task: (open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)...
+INFO:     [20:01:52] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:01:52] 🔍 Starting the research task for '(top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)'...
+INFO:     [20:01:52] 🤖 AI Research Agent
+INFO:     [20:01:52] 🌐 Browsing the web to learn more about the task: (top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)...
+INFO:     [20:01:58] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:01:58] 🔍 Starting the research task for '(top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)'...
+INFO:     [20:01:58] 🤖 AI Research Agent
+INFO:     [20:01:58] 🌐 Browsing the web to learn more about the task: (top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)...
+INFO:     [20:02:02] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:02:02] 🔍 Starting the research task for '(open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)'...
+INFO:     [20:02:02] 🤖 AI Research Agent
+INFO:     [20:02:02] 🌐 Browsing the web to learn more about the task: (open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)...
+INFO:     [20:02:05] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:02:05] 🗂️ I will conduct my research based on the following queries: ['open-source autonomous coding agents challenges 2026', 'limitations of open-source AI agent frameworks in day-to-day development workflows', 'open-source AI agent frameworks comparison 2026 multi-agent collaboration tool integration', '(open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)']...
+INFO:     [20:02:05] 
+🔍 Running research for 'open-source autonomous coding agents challenges 2026'...
+INFO:     [20:02:05] 
+🔍 Running research for 'limitations of open-source AI agent frameworks in day-to-day development workflows'...
+INFO:     [20:02:05] 
+🔍 Running research for 'open-source AI agent frameworks comparison 2026 multi-agent collaboration tool integration'...
+INFO:     [20:02:05] 
+🔍 Running research for '(open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)'...
+INFO:     [20:02:06] ✅ Added source url to research: https://capy.ai/articles/best-open-source-ai-coding-agents
+
+INFO:     [20:02:06] ✅ Added source url to research: https://blog.temok.com/ai-agent-frameworks/
+
+INFO:     [20:02:06] ✅ Added source url to research: https://www.opensourceforu.com/2026/02/openai-launches-codex-with-open-source-security-layer-for-parallel-ai-coding-agents/
+
+INFO:     [20:02:06] ✅ Added source url to research: https://aimultiple.com/agentic-frameworks
+
+INFO:     [20:02:06] ✅ Added source url to research: https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+
+INFO:     [20:02:06] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:06] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:07] ✅ Added source url to research: https://medium.com/@thekrisledel/the-fundamental-limitations-of-ai-agent-frameworks-expose-a-stark-reality-gap-7571affb56e5
+
+INFO:     [20:02:07] ✅ Added source url to research: https://www.quora.com/What-are-the-limitations-of-using-AI-agents-in-workflows
+
+INFO:     [20:02:07] ✅ Added source url to research: https://learningdaily.dev/the-real-limitations-of-ai-agents-and-how-to-work-around-them-67f38bd4a355
+
+INFO:     [20:02:07] ✅ Added source url to research: https://www.reddit.com/r/AI_Agents/comments/1i1pgih/in_your_opinion_what_are_the_key_flaws_most_ai/
+
+INFO:     [20:02:07] ✅ Added source url to research: https://towardsdatascience.com/a-developers-guide-to-building-scalable-ai-workflows-vs-agents/
+
+INFO:     [20:02:07] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:07] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.reddit.com/r/AI_Agents/comments/1i1pgih/in_your_opinion_what_are_the_key_flaws_most_ai/
+Content too short or empty for https://medium.com/@thekrisledel/the-fundamental-limitations-of-ai-agent-frameworks-expose-a-stark-reality-gap-7571affb56e5
+INFO:     [20:02:07] ✅ Added source url to research: https://www.youtube.com/watch?v=dqaooqBPVRI
+
+INFO:     [20:02:07] ✅ Added source url to research: https://twill.ai/blog/top-5-ai-coding-agents-2026
+
+INFO:     [20:02:07] ✅ Added source url to research: https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf
+
+INFO:     [20:02:07] ✅ Added source url to research: https://medium.com/@dave-patten/the-state-of-ai-coding-agents-2026-from-pair-programming-to-autonomous-ai-teams-b11f2b39232a
+
+INFO:     [20:02:07] ✅ Added source url to research: https://levelup.gitconnected.com/10-modern-agentic-ai-tools-developers-should-explore-in-2026-27ce3b08e2e1
+
+INFO:     [20:02:07] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:07] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.quora.com/What-are-the-limitations-of-using-AI-agents-in-workflows
+Content too short or empty for https://medium.com/@dave-patten/the-state-of-ai-coding-agents-2026-from-pair-programming-to-autonomous-ai-teams-b11f2b39232a
+Content too short or empty for https://learningdaily.dev/the-real-limitations-of-ai-agents-and-how-to-work-around-them-67f38bd4a355
+INFO:     [20:02:08] 📄 Scraped 1 pages of content
+INFO:     [20:02:08] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:02:08] 🌐 Scraping complete
+INFO:     [20:02:08] 📚 Getting relevant content based on query: limitations of open-source AI agent frameworks in day-to-day development workflows...
+INFO:     [20:02:08] ✅ Added source url to research: https://blog.premai.io/15-best-ai-agent-frameworks-for-enterprise-open-source-to-managed-2026/
+
+INFO:     [20:02:08] ✅ Added source url to research: https://www.gumloop.com/blog/ai-agent-frameworks
+
+INFO:     [20:02:08] ✅ Added source url to research: https://gurusup.com/blog/best-multi-agent-frameworks-2026
+
+INFO:     [20:02:08] ✅ Added source url to research: https://www.intuz.com/blog/top-5-ai-agent-frameworks-2025
+
+INFO:     [20:02:08] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:08] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://levelup.gitconnected.com/10-modern-agentic-ai-tools-developers-should-explore-in-2026-27ce3b08e2e1
+Content too short or empty for https://www.youtube.com/watch?v=dqaooqBPVRI
+INFO:     [20:02:08] 📄 Scraped 2 pages of content
+INFO:     [20:02:08] 🖼️ Selected 0 new images from 0 total images
+INFO:     [20:02:08] 🌐 Scraping complete
+INFO:     [20:02:08] 📚 Getting relevant content based on query: open-source autonomous coding agents challenges 2026...
+INFO:     [20:02:08] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:09] 📄 Scraped 4 pages of content
+INFO:     [20:02:09] 🖼️ Selected 4 new images from 24 total images
+INFO:     [20:02:09] 🌐 Scraping complete
+INFO:     [20:02:09] 📚 Getting relevant content based on query: open-source AI agent frameworks comparison 2026 multi-agent collaboration tool integration...
+INFO:     [20:02:09] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:09] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:09] 🗂️ I will conduct my research based on the following queries: ['top AI agent frameworks 2025 production-ready comparison', 'evolution of AI agent frameworks 2025 LangChain vs CrewAI vs AutoGen', 'key differences between enterprise AI agent platforms 2026', '(top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)']...
+INFO:     [20:02:09] 
+🔍 Running research for 'top AI agent frameworks 2025 production-ready comparison'...
+INFO:     [20:02:09] 
+🔍 Running research for 'evolution of AI agent frameworks 2025 LangChain vs CrewAI vs AutoGen'...
+INFO:     [20:02:09] 
+🔍 Running research for 'key differences between enterprise AI agent platforms 2026'...
+INFO:     [20:02:09] 
+🔍 Running research for '(top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)'...
+INFO:     [20:02:10] 🗂️ I will conduct my research based on the following queries: ['open-source LLM frameworks multi-agent systems 2026 LangGraph CrewAI AutoGen', 'best open-source AI agent frameworks 2026 advanced orchestration workflow design', 'multi-agent AI frameworks 2025-2026 GitHub Lemon Agent MS-Agent Skills comparison', '(open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)']...
+INFO:     [20:02:10] 
+🔍 Running research for 'open-source LLM frameworks multi-agent systems 2026 LangGraph CrewAI AutoGen'...
+INFO:     [20:02:10] 
+🔍 Running research for 'best open-source AI agent frameworks 2026 advanced orchestration workflow design'...
+INFO:     [20:02:10] 
+🔍 Running research for 'multi-agent AI frameworks 2025-2026 GitHub Lemon Agent MS-Agent Skills comparison'...
+INFO:     [20:02:10] 
+🔍 Running research for '(open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)'...
+INFO:     [20:02:10] 🗂️ I will conduct my research based on the following queries: ['top 5 open-source AI agent frameworks 2025 reasoning tasks multi-agent collaboration tool use comparisons', 'LangGraph AutoGen CrewAI Microsoft Agent Framework Google ADK Mastra open-source comparison 2025', 'open-source AI agent frameworks 2025 reasoning multi-agent collaboration tool integration implications enterprise use', '(top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)']...
+INFO:     [20:02:10] 
+🔍 Running research for 'top 5 open-source AI agent frameworks 2025 reasoning tasks multi-agent collaboration tool use comparisons'...
+INFO:     [20:02:10] 
+🔍 Running research for 'LangGraph AutoGen CrewAI Microsoft Agent Framework Google ADK Mastra open-source comparison 2025'...
+INFO:     [20:02:10] 
+🔍 Running research for 'open-source AI agent frameworks 2025 reasoning multi-agent collaboration tool integration implications enterprise use'...
+INFO:     [20:02:10] 
+🔍 Running research for '(top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)'...
+Content too short or empty for https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+INFO:     [20:02:10] ✅ Added source url to research: https://www.ampcome.com/post/top-7-ai-agent-frameworks-in-2025
+
+INFO:     [20:02:10] ✅ Added source url to research: https://medium.com/data-science-collective/the-best-ai-agent-frameworks-for-2026-tier-list-b3a4362fac0d
+
+INFO:     [20:02:10] ✅ Added source url to research: https://halk.io/blog/pt/best-ai-agent-platforms-2026
+
+INFO:     [20:02:10] ✅ Added source url to research: https://zeroclaws.io/blog/best-ai-agent-frameworks-2026/
+
+INFO:     [20:02:10] ✅ Added source url to research: https://www.datacamp.com/blog/best-ai-agents
+
+INFO:     [20:02:10] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:10] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://blog.temok.com/ai-agent-frameworks/
+INFO:     [20:02:11] 📄 Scraped 3 pages of content
+INFO:     [20:02:11] 🖼️ Selected 4 new images from 4 total images
+INFO:     [20:02:11] 🌐 Scraping complete
+INFO:     [20:02:11] 📚 Getting relevant content based on query: (open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)...
+Content too short or empty for https://medium.com/data-science-collective/the-best-ai-agent-frameworks-for-2026-tier-list-b3a4362fac0d
+INFO:     [20:02:11] ✅ Added source url to research: https://www.intuz.com/blog/top-5-ai-agent-frameworks-2025
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.shakudo.io/blog/open-source-ai-agent-frameworks
+
+INFO:     [20:02:11] ✅ Added source url to research: https://medium.com/@Deep-concept/top-10-open-source-ai-agent-frameworks-to-know-in-2026-91395d47ba12
+
+INFO:     [20:02:11] ✅ Added source url to research: https://latenode.com/blog/ai-agents-autonomous-systems/open-source-ai-agent-tools/11-open-source-ai-agent-frameworks-that-will-transform-your-development-2025-complete-guide
+
+INFO:     [20:02:11] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:11] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:11] ✅ Added source url to research: https://pub.towardsai.net/the-4-best-open-source-multi-agent-ai-frameworks-2026-9da389f9407a
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.temok.com/blog/ai-agent-frameworks
+
+INFO:     [20:02:11] ✅ Added source url to research: https://medium.com/@Deep-concept/top-10-open-source-ai-agent-frameworks-to-know-in-2026-91395d47ba12
+
+INFO:     [20:02:11] ✅ Added source url to research: https://gurusup.com/blog/best-multi-agent-frameworks-2026
+
+INFO:     [20:02:11] ✅ Added source url to research: https://github.com/modelscope/ms-agent
+
+INFO:     [20:02:11] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:11] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://medium.com/@Deep-concept/top-10-open-source-ai-agent-frameworks-to-know-in-2026-91395d47ba12
+INFO:     [20:02:11] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:11] Finalized research step.
+💸 Total Research Costs: $0.029335260000000002
+Content too short or empty for https://www.datacamp.com/blog/best-ai-agents
+Content too short or empty for https://medium.com/@Deep-concept/top-10-open-source-ai-agent-frameworks-to-know-in-2026-91395d47ba12
+INFO:     [20:02:11] ✅ Added source url to research: https://www.ampcome.com/post/enterprise-ai-agent-platform-comparison
+
+INFO:     [20:02:11] ✅ Added source url to research: https://promethium.ai/guides/multi-agent-ai-platform-comparison-2026/
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.shakudo.io/blog/enterprise-ai-agent-platforms-compared
+
+INFO:     [20:02:11] ✅ Added source url to research: https://mindra.co/blog/ai-agent-platform-comparison-the-complete-enterprise-evaluation-guide-for-2026
+
+INFO:     [20:02:11] ✅ Added source url to research: https://jetruby.com/blog/enterprise-ai-agents/
+
+INFO:     [20:02:11] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:11] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://pub.towardsai.net/the-4-best-open-source-multi-agent-ai-frameworks-2026-9da389f9407a
+INFO:     [20:02:11] ✅ Added source url to research: https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3
+
+INFO:     [20:02:11] ✅ Added source url to research: https://medium.com/@iamanraghuvanshi/agentic-ai-3-top-ai-agent-frameworks-in-2025-langchain-autogen-crewai-beyond-2fc3388e7dec
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.codecademy.com/article/top-ai-agent-frameworks-in-2025
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.linkedin.com/pulse/best-agentic-ai-frameworks-2025-langgraph-autogen-crewai-ambatwar-kiltf
+
+INFO:     [20:02:11] ✅ Added source url to research: https://www.agilesoftlabs.com/blog/2026/03/langchain-vs-crewai-vs-autogen-top-ai
+
+INFO:     [20:02:11] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:11] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3
+INFO:     [20:02:12] ✅ Added source url to research: https://alphacorp.ai/blog/top-5-ai-agent-frameworks-november-2025
+
+INFO:     [20:02:12] ✅ Added source url to research: https://langfuse.com/blog/2025-03-19-ai-agent-comparison
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.linkedin.com/pulse/best-agentic-ai-frameworks-2025-langgraph-autogen-crewai-ambatwar-kiltf
+
+INFO:     [20:02:12] ✅ Added source url to research: https://dev.to/hani__8725b7a/agentic-ai-frameworks-comparison-2025-mcp-agent-langgraph-ag2-pydanticai-crewai-h40
+
+INFO:     [20:02:12] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:12] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://medium.com/@iamanraghuvanshi/agentic-ai-3-top-ai-agent-frameworks-in-2025-langchain-autogen-crewai-beyond-2fc3388e7dec
+INFO:     [20:02:12] ✅ Added source url to research: https://deepchecks.com/best-ai-agent-frameworks/
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.effectivesoft.com/blog/top-frameworks-for-building-ai-agents.html
+
+INFO:     [20:02:12] ✅ Added source url to research: https://medium.com/@julio.pessan.pessan/top-10-ai-agent-frameworks-for-2025-langchain-leads-the-pack-in-multi-agent-orchestration-c115044bcb60
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.agentframeworkhub.com/best-frameworks/production-ai-agents
+
+INFO:     [20:02:12] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:12] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://medium.com/@julio.pessan.pessan/top-10-ai-agent-frameworks-for-2025-langchain-leads-the-pack-in-multi-agent-orchestration-c115044bcb60
+INFO:     [20:02:12] ✅ Added source url to research: https://www.appintent.com/software/ai/agentic-orchestration/
+
+INFO:     [20:02:12] ✅ Added source url to research: https://vellum.ai/blog/top-ai-agent-frameworks-for-developers
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.gumloop.com/blog/ai-agent-frameworks
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+
+INFO:     [20:02:12] ✅ Added source url to research: https://alphacorp.ai/blog/the-8-best-ai-agent-frameworks-in-2026-a-developers-guide
+
+INFO:     [20:02:12] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:12] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:12] ✅ Added source url to research: https://techwithibrahim.medium.com/top-10-most-starred-ai-agent-frameworks-on-github-2026-df6e760a950b
+
+INFO:     [20:02:12] ✅ Added source url to research: https://github.com/caramaschiHG/awesome-ai-agents-2026
+
+INFO:     [20:02:12] ✅ Added source url to research: https://genta.dev/resources/best-ai-agent-frameworks-2026
+
+INFO:     [20:02:12] ✅ Added source url to research: https://arsum.com/blog/posts/ai-agent-frameworks/
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.turing.com/resources/ai-agent-frameworks
+
+INFO:     [20:02:12] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:12] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:12] ✅ Added source url to research: https://openagents.org/blog/posts/2026-02-23-open-source-ai-agent-frameworks-compared
+
+INFO:     [20:02:12] ✅ Added source url to research: https://f3fundit.com/multi-agent-orchestration-frameworks-compared-autogen-vs-crewai-vs-agentops-2026/
+
+INFO:     [20:02:12] ✅ Added source url to research: https://www.adopt.ai/blog/multi-agent-frameworks
+
+INFO:     [20:02:12] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:12] 🌐 Scraping content from 3 URLs...
+Content too short or empty for https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+Content too short or empty for https://techwithibrahim.medium.com/top-10-most-starred-ai-agent-frameworks-on-github-2026-df6e760a950b
+INFO:     [20:02:13] 📄 Scraped 3 pages of content
+INFO:     [20:02:13] 🖼️ Selected 4 new images from 12 total images
+INFO:     [20:02:13] 🌐 Scraping complete
+INFO:     [20:02:13] 📚 Getting relevant content based on query: (top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)...
+INFO:     [20:02:13] 📄 Scraped 4 pages of content
+INFO:     [20:02:13] 🖼️ Selected 4 new images from 19 total images
+INFO:     [20:02:13] 🌐 Scraping complete
+INFO:     [20:02:13] 📚 Getting relevant content based on query: LangGraph AutoGen CrewAI Microsoft Agent Framework Google ADK Mastra open-source comparison 2025...
+INFO:     [20:02:13] ✅ Added source url to research: https://www.adopt.ai/blog/multi-agent-frameworks
+
+INFO:     [20:02:13] ✅ Added source url to research: https://blog.premai.io/15-best-ai-agent-frameworks-for-enterprise-open-source-to-managed-2026/
+
+INFO:     [20:02:13] ✅ Added source url to research: https://www.temok.com/blog/ai-agent-frameworks
+
+INFO:     [20:02:13] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:13] 🌐 Scraping content from 3 URLs...
+INFO:     [20:02:13] 📄 Scraped 4 pages of content
+INFO:     [20:02:13] 🖼️ Selected 4 new images from 25 total images
+INFO:     [20:02:13] 🌐 Scraping complete
+INFO:     [20:02:13] 📚 Getting relevant content based on query: multi-agent AI frameworks 2025-2026 GitHub Lemon Agent MS-Agent Skills comparison...
+INFO:     [20:02:13] 📄 Scraped 5 pages of content
+INFO:     [20:02:13] 🖼️ Selected 4 new images from 39 total images
+INFO:     [20:02:13] 🌐 Scraping complete
+INFO:     [20:02:13] 📚 Getting relevant content based on query: key differences between enterprise AI agent platforms 2026...
+INFO:     [20:02:14] 📄 Scraped 4 pages of content
+INFO:     [20:02:14] 🖼️ Selected 4 new images from 26 total images
+INFO:     [20:02:14] 🌐 Scraping complete
+INFO:     [20:02:14] 📚 Getting relevant content based on query: best open-source AI agent frameworks 2026 advanced orchestration workflow design...
+Content too short or empty for https://www.firecrawl.dev/blog/best-open-source-agent-frameworks
+INFO:     [20:02:14] 📄 Scraped 3 pages of content
+INFO:     [20:02:14] 🖼️ Selected 4 new images from 14 total images
+INFO:     [20:02:14] 🌐 Scraping complete
+INFO:     [20:02:14] 📚 Getting relevant content based on query: (top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)...
+INFO:     [20:02:14] ✅ Added source url to research: https://aimultiple.com/agentic-frameworks
+
+INFO:     [20:02:14] ✅ Added source url to research: https://pub.towardsai.net/the-4-best-open-source-multi-agent-ai-frameworks-2026-9da389f9407a
+
+INFO:     [20:02:14] ✅ Added source url to research: https://generativeai.pub/top-5-open-source-frameworks-to-build-multi-agent-ai-systems-in-2025-fc92b0fb62af
+
+INFO:     [20:02:14] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:14] 🌐 Scraping content from 3 URLs...
+INFO:     [20:02:14] 📄 Scraped 3 pages of content
+INFO:     [20:02:14] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:02:14] 🌐 Scraping complete
+INFO:     [20:02:14] 📚 Getting relevant content based on query: evolution of AI agent frameworks 2025 LangChain vs CrewAI vs AutoGen...
+INFO:     [20:02:14] 📄 Scraped 3 pages of content
+INFO:     [20:02:14] 🖼️ Selected 4 new images from 14 total images
+INFO:     [20:02:14] 🌐 Scraping complete
+INFO:     [20:02:14] 📚 Getting relevant content based on query: open-source LLM frameworks multi-agent systems 2026 LangGraph CrewAI AutoGen...
+INFO:     [20:02:14] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:14] 📚 Combined research context: 0 MCP sources, web content
+Content too short or empty for https://generativeai.pub/top-5-open-source-frameworks-to-build-multi-agent-ai-systems-in-2025-fc92b0fb62af
+INFO:     [20:02:14] 📚 Combined research context: 0 MCP sources, web content
+Content too short or empty for https://pub.towardsai.net/the-4-best-open-source-multi-agent-ai-frameworks-2026-9da389f9407a
+INFO:     [20:02:14] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:14] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:15] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:15] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:15] 📚 Combined research context: 0 MCP sources, web content
+Content too short or empty for https://www.temok.com/blog/ai-agent-frameworks
+INFO:     [20:02:15] 📄 Scraped 2 pages of content
+INFO:     [20:02:15] 🖼️ Selected 4 new images from 14 total images
+INFO:     [20:02:15] 🌐 Scraping complete
+INFO:     [20:02:15] 📚 Getting relevant content based on query: (open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)...
+INFO:     [20:02:16] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:16] Finalized research step.
+💸 Total Research Costs: $0.036643440000000006
+INFO:     [20:02:16] 📄 Scraped 1 pages of content
+INFO:     [20:02:16] 🖼️ Selected 1 new images from 1 total images
+INFO:     [20:02:16] 🌐 Scraping complete
+INFO:     [20:02:16] 📚 Getting relevant content based on query: top 5 open-source AI agent frameworks 2025 reasoning tasks multi-agent collaboration tool use comparisons...
+Content too short or empty for https://www.agentframeworkhub.com/best-frameworks/production-ai-agents
+INFO:     [20:02:16] 📄 Scraped 2 pages of content
+INFO:     [20:02:16] 🖼️ Selected 4 new images from 20 total images
+INFO:     [20:02:16] 🌐 Scraping complete
+INFO:     [20:02:16] 📚 Getting relevant content based on query: top AI agent frameworks 2025 production-ready comparison...
+INFO:     [20:02:16] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:17] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:17] Finalized research step.
+💸 Total Research Costs: $0.06180172
+Content too short or empty for https://www.temok.com/blog/ai-agent-frameworks
+INFO:     [20:02:17] 📄 Scraped 2 pages of content
+INFO:     [20:02:17] 🖼️ Selected 4 new images from 20 total images
+INFO:     [20:02:17] 🌐 Scraping complete
+INFO:     [20:02:17] 📚 Getting relevant content based on query: open-source AI agent frameworks 2025 reasoning multi-agent collaboration tool integration implications enterprise use...
+INFO:     [20:02:18] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:18] Finalized research step.
+💸 Total Research Costs: $0.03237896
+INFO:     [20:02:43] 🔍 Starting the research task for '(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)'...
+INFO:     [20:02:43] 🤖 AI Research Agent
+INFO:     [20:02:43] 🌐 Browsing the web to learn more about the task: (emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)...
+INFO:     [20:02:46] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:02:49] 🗂️ I will conduct my research based on the following queries: ['emerging trends in AI agent frameworks 2026 enterprise adoption', 'future directions of autonomous AI systems in business automation 2025-2027', 'agentic AI trends 2026 governance scalability and multi-agent collaboration', '(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)']...
+INFO:     [20:02:49] 
+🔍 Running research for 'emerging trends in AI agent frameworks 2026 enterprise adoption'...
+INFO:     [20:02:49] 
+🔍 Running research for 'future directions of autonomous AI systems in business automation 2025-2027'...
+INFO:     [20:02:49] 
+🔍 Running research for 'agentic AI trends 2026 governance scalability and multi-agent collaboration'...
+INFO:     [20:02:49] 
+🔍 Running research for '(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)'...
+INFO:     [20:02:50] ✅ Added source url to research: https://triviat.com/blog/ai-agent/ai-trends-for-2026/
+
+INFO:     [20:02:50] ✅ Added source url to research: https://www.xcubelabs.com/blog/top-10-agentic-ai-trends-to-watch-in-2026/
+
+INFO:     [20:02:50] ✅ Added source url to research: https://machinelearningmastery.com/7-agentic-ai-trends-to-watch-in-2026/
+
+INFO:     [20:02:50] ✅ Added source url to research: https://www.blueprism.com/resources/blog/future-ai-agents-trends/
+
+INFO:     [20:02:50] ✅ Added source url to research: https://www.ibm.com/think/news/ai-tech-trends-predictions-2026
+
+INFO:     [20:02:50] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:50] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:51] ✅ Added source url to research: https://www.kellton.com/kellton-tech-blog/agentic-ai-trends-2026
+
+INFO:     [20:02:51] ✅ Added source url to research: https://msdynamicsworld.com/blog-post/ultimate-guide-10-transformative-agentic-ai-trends-2026
+
+INFO:     [20:02:51] ✅ Added source url to research: https://2744722.fs1.hubspotusercontent-na1.net/hubfs/2744722/files/ai-trends-2026.pdf
+
+INFO:     [20:02:51] ✅ Added source url to research: https://assets.ringcentral.com/us/report/agentic-ai-trends-2026.pdf
+
+INFO:     [20:02:51] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:51] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://triviat.com/blog/ai-agent/ai-trends-for-2026/
+INFO:     [20:02:51] ✅ Added source url to research: https://www.researchgate.net/publication/398878299_Agentic_Artificial_Intelligence_Maturity_and_Enterprise_Adoption_by_2026
+
+INFO:     [20:02:51] ✅ Added source url to research: https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/
+
+INFO:     [20:02:51] ✅ Added source url to research: https://thoughtminds.ai/blog/10-gartner-prediction-for-enterprise-ai-adoption-trends
+
+INFO:     [20:02:51] ✅ Added source url to research: https://stellium.consulting/articles/news/2026-ai-trends/
+
+INFO:     [20:02:51] ✅ Added source url to research: https://cloud.google.com/resources/content/ai-agent-trends-2026
+
+INFO:     [20:02:51] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:51] 🌐 Scraping content from 5 URLs...
+INFO:     [20:02:51] ✅ Added source url to research: https://evoknow.com/sam-altmans-2025-2027-roadmap-and-what-it-means-for-enterprises/
+
+INFO:     [20:02:51] ✅ Added source url to research: https://booster-digital.com/blog/future-of-ai-automation-next-decades-business-transformation/
+
+INFO:     [20:02:51] ✅ Added source url to research: https://www.blueprism.com/resources/blog/future-of-ai-in-business/
+
+INFO:     [20:02:51] ✅ Added source url to research: https://www.linkedin.com/posts/matteocastiello_sam-altmans-year-on-year-predictions-for-activity-7333032717707558912-zRMJ
+
+INFO:     [20:02:51] ✅ Added source url to research: https://www.nurix.ai/blogs/evolution-future-autonomous-ai-agents
+
+INFO:     [20:02:51] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:02:51] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/
+Content too short or empty for https://stellium.consulting/articles/news/2026-ai-trends/
+INFO:     [20:02:53] 📄 Scraped 3 pages of content
+INFO:     [20:02:53] 🖼️ Selected 3 new images from 3 total images
+INFO:     [20:02:53] 🌐 Scraping complete
+INFO:     [20:02:53] 📚 Getting relevant content based on query: emerging trends in AI agent frameworks 2026 enterprise adoption...
+INFO:     [20:02:54] 📄 Scraped 4 pages of content
+INFO:     [20:02:54] 🖼️ Selected 4 new images from 23 total images
+INFO:     [20:02:54] 🌐 Scraping complete
+INFO:     [20:02:54] 📚 Getting relevant content based on query: (emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)...
+INFO:     [20:02:54] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:55] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:02:55] 📄 Scraped 5 pages of content
+INFO:     [20:02:55] 🖼️ Selected 4 new images from 27 total images
+INFO:     [20:02:55] 🌐 Scraping complete
+INFO:     [20:02:55] 📚 Getting relevant content based on query: future directions of autonomous AI systems in business automation 2025-2027...
+INFO:     [20:02:57] 📄 Scraped 4 pages of content
+INFO:     [20:02:57] 🖼️ Selected 1 new images from 1 total images
+INFO:     [20:02:57] 🌐 Scraping complete
+INFO:     [20:02:57] 📚 Getting relevant content based on query: agentic AI trends 2026 governance scalability and multi-agent collaboration...
+INFO:     [20:02:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:03:00] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:03:00] Finalized research step.
+💸 Total Research Costs: $0.05237702
+LLM call failed (1 total failures): Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4000, prompt_tokens=214, total_tokens=4214, completion_tokens_details=None, prompt_tokens_details=None)
+INFO:     [20:04:30] 🔍 Starting the research task for '(LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)'...
+INFO:     [20:04:30] 🤖 AI Research Agent
+INFO:     [20:04:30] 🌐 Browsing the web to learn more about the task: (LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)...
+INFO:     [20:04:35] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:04:35] 🔍 Starting the research task for '(("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")'...
+INFO:     [20:04:35] 💻 Tech Analyst Agent
+INFO:     [20:04:35] 🌐 Browsing the web to learn more about the task: (("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")...
+INFO:     [20:04:41] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:04:41] 🔍 Starting the research task for '("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")'...
+INFO:     [20:04:41] 🤖 AI Research Agent
+INFO:     [20:04:41] 🌐 Browsing the web to learn more about the task: ("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")...
+INFO:     [20:04:44] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:04:44] 🔍 Starting the research task for '(AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)'...
+INFO:     [20:04:44] 🤖 AI Research Agent
+INFO:     [20:04:44] 🌐 Browsing the web to learn more about the task: (AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)...
+INFO:     [20:04:51] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:04:54] 🗂️ I will conduct my research based on the following queries: ['AutoGen multi-agent collaboration use cases 2026', 'AutoGen asynchronous task execution with distributed tracing', 'AutoGen distributed agent runtime persistent task execution Redis', '(AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)']...
+INFO:     [20:04:54] 
+🔍 Running research for 'AutoGen multi-agent collaboration use cases 2026'...
+INFO:     [20:04:54] 
+🔍 Running research for 'AutoGen asynchronous task execution with distributed tracing'...
+INFO:     [20:04:54] 
+🔍 Running research for 'AutoGen distributed agent runtime persistent task execution Redis'...
+INFO:     [20:04:54] 
+🔍 Running research for '(AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)'...
+INFO:     [20:04:54] 🗂️ I will conduct my research based on the following queries: ['LangGraph vs LangChain 2026 comparison for production use', 'LangChain and LangGraph differences in multi-agent systems', 'LangGraph built on LangChain advantages for stateful workflows', '(LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)']...
+INFO:     [20:04:54] 
+🔍 Running research for 'LangGraph vs LangChain 2026 comparison for production use'...
+INFO:     [20:04:54] 
+🔍 Running research for 'LangChain and LangGraph differences in multi-agent systems'...
+INFO:     [20:04:54] 
+🔍 Running research for 'LangGraph built on LangChain advantages for stateful workflows'...
+INFO:     [20:04:54] 
+🔍 Running research for '(LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)'...
+INFO:     [20:04:54] 🗂️ I will conduct my research based on the following queries: ['AI coding agents impact on software development economics 2026', 'agentic coding tools benefits and challenges in modern software development', 'future of software development with autonomous AI agents opportunities and limitations', '(("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")']...
+INFO:     [20:04:54] 
+🔍 Running research for 'AI coding agents impact on software development economics 2026'...
+INFO:     [20:04:54] 
+🔍 Running research for 'agentic coding tools benefits and challenges in modern software development'...
+INFO:     [20:04:54] 
+🔍 Running research for 'future of software development with autonomous AI agents opportunities and limitations'...
+INFO:     [20:04:54] 
+🔍 Running research for '(("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")'...
+INFO:     [20:04:55] ✅ Added source url to research: https://www.linkedin.com/pulse/multi-agent-systems-autogen-pankaj-gajjar-dy0of
+
+INFO:     [20:04:55] ✅ Added source url to research: https://jinlow.medium.com/autogen-framework-multi-agent-orchestration-and-complex-task-management-ccf876079bbb
+
+INFO:     [20:04:55] ✅ Added source url to research: https://www.projectpro.io/article/autogen-projects-and-examples/1129
+
+INFO:     [20:04:55] ✅ Added source url to research: https://artificial-intelligence-wiki.com/ai-automation/ai-workflow-orchestration-tools/autogen-multi-agent-tutorial
+
+INFO:     [20:04:55] ✅ Added source url to research: https://www.akira.ai/blog/microsoft-autogen-with-multi-agent-system
+
+INFO:     [20:04:55] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:55] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:55] 🗂️ I will conduct my research based on the following queries: ['AI coding assistants vs autonomous coding agents 2026 comparison', 'autonomous development tools key differences AI coding agents and assistants', 'agentic AI coding frameworks comparison 2026 Devin Cursor Swfte', '("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")']...
+INFO:     [20:04:55] 
+🔍 Running research for 'AI coding assistants vs autonomous coding agents 2026 comparison'...
+INFO:     [20:04:55] 
+🔍 Running research for 'autonomous development tools key differences AI coding agents and assistants'...
+INFO:     [20:04:55] 
+🔍 Running research for 'agentic AI coding frameworks comparison 2026 Devin Cursor Swfte'...
+INFO:     [20:04:55] 
+🔍 Running research for '("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")'...
+Content too short or empty for https://jinlow.medium.com/autogen-framework-multi-agent-orchestration-and-complex-task-management-ccf876079bbb
+INFO:     [20:04:56] ✅ Added source url to research: https://python.plainenglish.io/langgraph-vs-langchain-which-framework-you-should-use-in-2026-73128b617121
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.folio3.ai/blog/langchain-vs-langgraph-ai-agent-framework
+
+INFO:     [20:04:56] ✅ Added source url to research: https://oxylabs.io/blog/langgraph-vs-langchain
+
+INFO:     [20:04:56] ✅ Added source url to research: https://duplocloud.com/blog/langchain-vs-langgraph/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.geeksforgeeks.org/artificial-intelligence/langchain-vs-langgraph/
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:56] ✅ Added source url to research: https://www.timesofai.com/industry-insights/agentic-coding-in-software-development
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.debutinfotech.com/blog/agentic-ai-coding-tools-for-software-development
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.champsoft.com/agentic-ai-in-software-development-revolutionizing-coding
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.toolify.ai/ai-news/the-impact-of-ai-on-software-development-jobs-opportunities-and-challenges-2690546
+
+INFO:     [20:04:56] ✅ Added source url to research: https://recapio.com/digest/agentic-coding-the-future-of-software-development-with-agents-by-armin-ronacher
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:56] ✅ Added source url to research: https://medium.com/@milenppavlov/building-better-observability-for-autogen-multi-agent-systems-b0c93b8a50e6
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.linkedin.com/posts/srikanth-reddy-98196712_genagentic-ai-microsoft-autogen-architecture-activity-7431716684551598080-r4V4
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.youtube.com/watch?v=npFhqs8YviQ
+
+INFO:     [20:04:56] ✅ Added source url to research: https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/tracing.html
+
+INFO:     [20:04:56] ✅ Added source url to research: https://github.com/microsoft/autogen/issues/5327
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:56] ✅ Added source url to research: https://www.youtube.com/watch?v=jKEgaQPmJz0
+
+INFO:     [20:04:56] ✅ Added source url to research: https://medium.com/@vishwajeetv2003/building-multi-agent-ai-applications-with-autogen-complete-tutorial-2026-2fbd9af73a9c
+
+INFO:     [20:04:56] ✅ Added source url to research: https://microsoft.github.io/autogen/0.2/docs/Use-Cases/agent_chat/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.gsdcouncil.org/blogs/design-multi-agent-systems-with-autogen-microsoft
+
+INFO:     [20:04:56] ✅ Added source url to research: https://galileo.ai/blog/autogen-framework-multi-agents
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://python.plainenglish.io/langgraph-vs-langchain-which-framework-you-should-use-in-2026-73128b617121
+INFO:     [20:04:56] ✅ Added source url to research: https://microsoft.github.io/autogen/dev//user-guide/core-user-guide/framework/distributed-agent-runtime.html
+
+INFO:     [20:04:56] ✅ Added source url to research: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.linkedin.com/posts/nikhil-verma-3bb969201_from-request-to-cognition-activity-7440396702106427392-Hb7-
+
+INFO:     [20:04:56] ✅ Added source url to research: https://medium.com/towardsdev/autogen-framework-multi-agent-orchestration-and-complex-task-management-ccf876079bbb
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://medium.com/@milenppavlov/building-better-observability-for-autogen-multi-agent-systems-b0c93b8a50e6
+INFO:     [20:04:56] ✅ Added source url to research: https://milvus.io/blog/langchain-vs-langgraph.md
+
+INFO:     [20:04:56] ✅ Added source url to research: https://medium.com/@tahirbalarabe2/%EF%B8%8Flangchain-vs-langgraph-a-comparative-analysis-ce7749a80d9c
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.reddit.com/r/LangChain/comments/1q6bl1n/langchain_or_langgraph_for_building_multi_agent/
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 3 URLs...
+INFO:     [20:04:56] ✅ Added source url to research: https://blog.langchain.com/langgraph/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://activewizards.com/blog/mastering-langgraph-a-guide-to-stateful-ai-workflows
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.reddit.com/r/rust/comments/1lecxqy/graphflow_langgraphinspired_stateful_graph/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://prepvector.substack.com/p/langgraph-in-action-building-complex
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.linkedin.com/pulse/building-intelligent-stateful-workflows-langgraph-practical-kohli-w4m0c
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.youtube.com/watch?v=npFhqs8YviQ
+INFO:     [20:04:56] ✅ Added source url to research: https://www.mildcrisis.com/post/autonomous-ai-agents-the-future-of-software-development?srsltid=AfmBOorUblBflsL1_KpQf7pTiZX2NmtsfVPmY88xHTjPIXi2nOkcR_uS
+
+INFO:     [20:04:56] ✅ Added source url to research: https://medium.com/nginity/the-future-of-software-development-isnt-ai-or-humans-it-s-ai-working-for-humans-and-with-humans-0274b74bbeef
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.diffblue.com/resources/towards-autonomous-ai-coding-agents-the-future-of-software-development/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://dev.to/aws-heroes/the-future-of-ai-agent-driven-paradigms-and-transformations-in-software-development-55l
+
+INFO:     [20:04:56] ✅ Added source url to research: https://cogentinfo.com/resources/autonomous-ai-agents-the-next-revolution-in-software-delivery
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:56] ✅ Added source url to research: https://www.timesofai.com/industry-insights/agentic-coding-in-software-development/
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.linkedin.com/posts/anthropicresearch_eight-trends-defining-how-software-gets-built-activity-7424525205449940993--Iv0
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.businessinsider.com/ai-coding-changing-software-developer-role-2026-3
+
+INFO:     [20:04:56] ✅ Added source url to research: https://www.reddit.com/r/programming/comments/1qhbyb8/article_software_in_2026_is_negotiated_by_agents/
+
+INFO:     [20:04:56] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:56] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://medium.com/@vishwajeetv2003/building-multi-agent-ai-applications-with-autogen-complete-tutorial-2026-2fbd9af73a9c
+Content too short or empty for https://medium.com/@tahirbalarabe2/%EF%B8%8Flangchain-vs-langgraph-a-comparative-analysis-ce7749a80d9c
+Content too short or empty for https://medium.com/towardsdev/autogen-framework-multi-agent-orchestration-and-complex-task-management-ccf876079bbb
+INFO:     [20:04:57] ✅ Added source url to research: https://cloud.google.com/discover/what-is-agentic-coding
+
+INFO:     [20:04:57] ✅ Added source url to research: https://levelup.gitconnected.com/how-software-development-is-changing-with-agentic-coding-4e9d48b7d0fd
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.reddit.com/r/ChatGPTCoding/comments/1p5f5le/are_agentic_coding_tools_actually_helping_your/
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.youtube.com/watch?v=nfOVgz_omlU
+
+INFO:     [20:04:57] ✅ Added source url to research: https://medium.com/@sahin.samia/what-is-agentic-coding-complete-guide-to-tools-use-cases-and-challenges-8e902ee5ebea
+
+INFO:     [20:04:57] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:57] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.youtube.com/watch?v=jKEgaQPmJz0
+INFO:     [20:04:57] ✅ Added source url to research: https://myengineeringpath.dev/tools/langchain-vs-langgraph/
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.truefoundry.com/blog/langchain-vs-langgraph
+
+INFO:     [20:04:57] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:57] 🌐 Scraping content from 2 URLs...
+INFO:     [20:04:57] ✅ Added source url to research: https://playcode.io/blog/best-ai-coding-agents-2026
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows
+
+INFO:     [20:04:57] ✅ Added source url to research: https://coursiv.io/blog/best-ai-tools-for-coding
+
+INFO:     [20:04:57] ✅ Added source url to research: https://seedium.io/blog/comparison-of-best-ai-coding-assistants/
+
+INFO:     [20:04:57] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:57] 🌐 Scraping content from 4 URLs...
+Content too short or empty for https://www.reddit.com/r/LangChain/comments/1q6bl1n/langchain_or_langgraph_for_building_multi_agent/
+INFO:     [20:04:57] ✅ Added source url to research: https://www.swfte.com/blog/ai-coding-agents-autonomous-dev
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.linkedin.com/pulse/6-types-ai-agent-you-should-know-before-2026-victor-omoboye-2ebye
+
+INFO:     [20:04:57] ✅ Added source url to research: https://skywork.ai/skypage/en/coding-ai-bot-guide/2028644301034119168
+
+INFO:     [20:04:57] ✅ Added source url to research: https://www.youtube.com/watch?v=LJ7Y6iA37ig
+
+INFO:     [20:04:57] ✅ Added source url to research: https://arxiv.org/html/2602.04226v1
+
+INFO:     [20:04:57] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:57] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.toolify.ai/ai-news/the-impact-of-ai-on-software-development-jobs-opportunities-and-challenges-2690546
+Content too short or empty for https://www.reddit.com/r/rust/comments/1lecxqy/graphflow_langgraphinspired_stateful_graph/
+Content too short or empty for https://www.reddit.com/r/programming/comments/1qhbyb8/article_software_in_2026_is_negotiated_by_agents/
+Content too short or empty for https://medium.com/nginity/the-future-of-software-development-isnt-ai-or-humans-it-s-ai-working-for-humans-and-with-humans-0274b74bbeef
+INFO:     [20:04:57] 📄 Scraped 3 pages of content
+INFO:     [20:04:57] 🖼️ Selected 4 new images from 18 total images
+INFO:     [20:04:57] 🌐 Scraping complete
+INFO:     [20:04:57] 📚 Getting relevant content based on query: AutoGen multi-agent collaboration use cases 2026...
+INFO:     [20:04:57] 📄 Scraped 4 pages of content
+INFO:     [20:04:57] 🖼️ Selected 4 new images from 18 total images
+INFO:     [20:04:57] 🌐 Scraping complete
+INFO:     [20:04:57] 📚 Getting relevant content based on query: (LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)...
+Content too short or empty for https://medium.com/@sahin.samia/what-is-agentic-coding-complete-guide-to-tools-use-cases-and-challenges-8e902ee5ebea
+Content too short or empty for https://www.reddit.com/r/ChatGPTCoding/comments/1p5f5le/are_agentic_coding_tools_actually_helping_your/
+Content too short or empty for https://www.youtube.com/watch?v=nfOVgz_omlU
+Content too short or empty for https://coursiv.io/blog/best-ai-tools-for-coding
+Content too short or empty for https://www.youtube.com/watch?v=LJ7Y6iA37ig
+Content too short or empty for https://levelup.gitconnected.com/how-software-development-is-changing-with-agentic-coding-4e9d48b7d0fd
+Content too short or empty for https://www.mildcrisis.com/post/autonomous-ai-agents-the-future-of-software-development?srsltid=AfmBOorUblBflsL1_KpQf7pTiZX2NmtsfVPmY88xHTjPIXi2nOkcR_uS
+INFO:     [20:04:58] 📄 Scraped 4 pages of content
+INFO:     [20:04:58] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: LangGraph built on LangChain advantages for stateful workflows...
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] 📄 Scraped 3 pages of content
+INFO:     [20:04:58] 🖼️ Selected 1 new images from 1 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: AutoGen distributed agent runtime persistent task execution Redis...
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] ✅ Added source url to research: https://www.ajen.dev/blog/ai-agents-vs-ai-assistants
+
+INFO:     [20:04:58] ✅ Added source url to research: https://openhands.dev/blog/agentic-coding-vs-code-completion
+
+INFO:     [20:04:58] ✅ Added source url to research: https://dev.to/slowcommit/ai-agents-vs-ai-assistants-how-autonomous-coding-is-replacing-copilot-style-tools-1e79
+
+INFO:     [20:04:58] ✅ Added source url to research: https://www.diffblue.com/resources/ai-agents-vs-ai-assistants-what-are-they-how-will-they-impact-software-development/
+
+INFO:     [20:04:58] ✅ Added source url to research: https://www.tredence.com/blog/ai-agents-vs-ai-assistants
+
+INFO:     [20:04:58] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:58] 🌐 Scraping content from 5 URLs...
+INFO:     [20:04:58] ✅ Added source url to research: https://morphllm.com/ai-coding-agent
+
+INFO:     [20:04:58] ✅ Added source url to research: https://www.builder.io/blog/devin-vs-cursor
+
+INFO:     [20:04:58] ✅ Added source url to research: https://blog.logrocket.com/ai-dev-tool-power-rankings/
+
+INFO:     [20:04:58] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:04:58] 🌐 Scraping content from 3 URLs...
+INFO:     [20:04:58] 📄 Scraped 3 pages of content
+INFO:     [20:04:58] 🖼️ Selected 3 new images from 3 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: AI coding agents impact on software development economics 2026...
+INFO:     [20:04:58] 📄 Scraped 3 pages of content
+INFO:     [20:04:58] 🖼️ Selected 2 new images from 2 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: AutoGen asynchronous task execution with distributed tracing...
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] 📄 Scraped 3 pages of content
+INFO:     [20:04:58] 🖼️ Selected 4 new images from 26 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: future of software development with autonomous AI agents opportunities and limitations...
+INFO:     [20:04:58] 📄 Scraped 1 pages of content
+INFO:     [20:04:58] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: LangChain and LangGraph differences in multi-agent systems...
+Content too short or empty for https://seedium.io/blog/comparison-of-best-ai-coding-assistants/
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+Content too short or empty for https://www.champsoft.com/agentic-ai-in-software-development-revolutionizing-coding
+INFO:     [20:04:58] 📄 Scraped 3 pages of content
+INFO:     [20:04:58] 🖼️ Selected 0 new images from 0 total images
+INFO:     [20:04:58] 🌐 Scraping complete
+INFO:     [20:04:58] 📚 Getting relevant content based on query: (("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")...
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:58] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:59] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:59] 📄 Scraped 4 pages of content
+INFO:     [20:04:59] 🖼️ Selected 4 new images from 11 total images
+INFO:     [20:04:59] 🌐 Scraping complete
+INFO:     [20:04:59] 📚 Getting relevant content based on query: (AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)...
+INFO:     [20:04:59] 📄 Scraped 1 pages of content
+INFO:     [20:04:59] 🖼️ Selected 4 new images from 6 total images
+INFO:     [20:04:59] 🌐 Scraping complete
+INFO:     [20:04:59] 📚 Getting relevant content based on query: agentic coding tools benefits and challenges in modern software development...
+INFO:     [20:04:59] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:59] Finalized research step.
+💸 Total Research Costs: $0.026338820000000006
+INFO:     [20:04:59] 📄 Scraped 5 pages of content
+INFO:     [20:04:59] 🖼️ Selected 4 new images from 28 total images
+INFO:     [20:04:59] 🌐 Scraping complete
+INFO:     [20:04:59] 📚 Getting relevant content based on query: autonomous development tools key differences AI coding agents and assistants...
+INFO:     [20:04:59] 📄 Scraped 2 pages of content
+INFO:     [20:04:59] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:04:59] 🌐 Scraping complete
+INFO:     [20:04:59] 📚 Getting relevant content based on query: LangGraph vs LangChain 2026 comparison for production use...
+INFO:     [20:04:59] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:04:59] Finalized research step.
+💸 Total Research Costs: $0.024136719999999997
+INFO:     [20:05:00] 📄 Scraped 3 pages of content
+INFO:     [20:05:00] 🖼️ Selected 4 new images from 19 total images
+INFO:     [20:05:00] 🌐 Scraping complete
+INFO:     [20:05:00] 📚 Getting relevant content based on query: agentic AI coding frameworks comparison 2026 Devin Cursor Swfte...
+INFO:     [20:05:00] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:00] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:00] Finalized research step.
+💸 Total Research Costs: $0.033617140000000004
+INFO:     [20:05:00] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:03] 📄 Scraped 2 pages of content
+INFO:     [20:05:03] 🖼️ Selected 4 new images from 5 total images
+INFO:     [20:05:03] 🌐 Scraping complete
+INFO:     [20:05:03] 📚 Getting relevant content based on query: AI coding assistants vs autonomous coding agents 2026 comparison...
+INFO:     [20:05:05] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:24] 🔍 Starting the research task for '(LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)'...
+INFO:     [20:05:24] 🤖 AI Research Agent
+INFO:     [20:05:24] 🌐 Browsing the web to learn more about the task: (LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)...
+INFO:     [20:05:31] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:05:31] 🔍 Starting the research task for '(Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)'...
+INFO:     [20:05:31] 💻 AI Research Agent
+INFO:     [20:05:31] 🌐 Browsing the web to learn more about the task: (Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)...
+INFO:     [20:05:37] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:05:38] 🔍 Starting the research task for '(agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)'...
+INFO:     [20:05:38] 📈 Business Analyst Agent
+INFO:     [20:05:38] 🌐 Browsing the web to learn more about the task: (agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)...
+INFO:     [20:05:41] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:05:41] 🗂️ I will conduct my research based on the following queries: ['LangGraph vs LangChain multi-agent collaboration advantages 2026', 'LangChain and LangGraph comparison for reasoning tasks and tool use', 'differences between LangGraph and LangChain in complex workflow management', '(LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)']...
+INFO:     [20:05:41] 🗂️ I will conduct my research based on the following queries: ['Microsoft Agent Framework vs LangChain vs CrewAI 2026 security and scalability comparison', 'AutoGen and Semantic Kernel unified framework benefits and drawbacks for multi-agent collaboration', 'LangGraph production use cases 2026 advantages and limitations in dynamic agent orchestration', "(Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)"]...
+INFO:     [20:05:41] 
+🔍 Running research for 'LangGraph vs LangChain multi-agent collaboration advantages 2026'...
+INFO:     [20:05:41] 
+🔍 Running research for 'LangChain and LangGraph comparison for reasoning tasks and tool use'...
+INFO:     [20:05:41] 
+🔍 Running research for 'differences between LangGraph and LangChain in complex workflow management'...
+INFO:     [20:05:41] 
+🔍 Running research for '(LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)'...
+INFO:     [20:05:41] 
+🔍 Running research for 'Microsoft Agent Framework vs LangChain vs CrewAI 2026 security and scalability comparison'...
+INFO:     [20:05:41] 
+🔍 Running research for 'AutoGen and Semantic Kernel unified framework benefits and drawbacks for multi-agent collaboration'...
+INFO:     [20:05:41] 
+🔍 Running research for 'LangGraph production use cases 2026 advantages and limitations in dynamic agent orchestration'...
+INFO:     [20:05:41] 
+🔍 Running research for '(Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)'...
+INFO:     [20:05:42] ✅ Added source url to research: https://pecollective.com/blog/ai-agent-frameworks-compared/
+
+INFO:     [20:05:42] ✅ Added source url to research: https://stencilwash.com/blog/ai-agent-framework-comparison-2026
+
+INFO:     [20:05:42] ✅ Added source url to research: https://ardor.cloud/blog/comparison-of-scalable-agent-frameworks
+
+INFO:     [20:05:42] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:42] 🌐 Scraping content from 3 URLs...
+INFO:     [20:05:42] ✅ Added source url to research: https://www.truefoundry.com/blog/langchain-vs-langgraph
+
+INFO:     [20:05:42] ✅ Added source url to research: https://duplocloud.com/blog/langchain-vs-langgraph/
+
+INFO:     [20:05:42] ✅ Added source url to research: https://www.projectpro.io/article/langchain-vs-langgraph/1123
+
+INFO:     [20:05:42] ✅ Added source url to research: https://oxylabs.io/blog/langgraph-vs-langchain
+
+INFO:     [20:05:42] ✅ Added source url to research: https://dev.to/ottoaria/langgraph-in-2026-build-multi-agent-ai-systems-that-actually-work-3h5
+
+INFO:     [20:05:42] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:42] 🌐 Scraping content from 5 URLs...
+INFO:     [20:05:43] ✅ Added source url to research: https://sanejbandgar.substack.com/p/autogen-semantic-kernel-the-agent
+
+INFO:     [20:05:43] ✅ Added source url to research: https://www.pikagent.com/compare/autogen-vs-semantic-kernel
+
+INFO:     [20:05:43] ✅ Added source url to research: https://medium.com/microsoftazure/semantic-kernel-vs-autogen-which-microsoft-ai-framework-fits-your-needs-a4de90ef4045
+
+INFO:     [20:05:43] ✅ Added source url to research: https://medium.com/data-science-collective/finally-we-have-answer-between-autogen-and-semantic-kernel-its-microsoft-agent-framework-071e84e0923b
+
+INFO:     [20:05:43] ✅ Added source url to research: https://www.zenml.io/blog/semantic-kernel-vs-autogen
+
+INFO:     [20:05:43] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:43] 🌐 Scraping content from 5 URLs...
+INFO:     [20:05:43] ✅ Added source url to research: https://sparkco.ai/blog/ai-agent-frameworks-compared-langchain-autogen-crewai-and-openclaw-in-2026
+
+INFO:     [20:05:43] ✅ Added source url to research: https://www.reddit.com/r/LangChain/comments/1rnc2u9/comprehensive_comparison_of_every_ai_agent/
+
+INFO:     [20:05:43] ✅ Added source url to research: https://www.alphamatch.ai/blog/top-agentic-ai-frameworks-2026
+
+INFO:     [20:05:43] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:43] 🌐 Scraping content from 3 URLs...
+INFO:     [20:05:43] ✅ Added source url to research: https://www.geeksforgeeks.org/artificial-intelligence/langchain-vs-langgraph/
+
+INFO:     [20:05:43] ✅ Added source url to research: https://latenode.com/blog/platform-comparisons-alternatives/automation-platform-comparisons/langchain-vs-langgraph-complete-comparison-guide-for-developers
+
+INFO:     [20:05:43] ✅ Added source url to research: https://medium.com/@puttt.spl/langchain-vs-langgraph-the-complete-tutorial-what-they-are-when-to-use-each-and-whether-you-7cd5e7c4cbe2
+
+INFO:     [20:05:43] ✅ Added source url to research: https://milvus.io/blog/langchain-vs-langgraph.md
+
+INFO:     [20:05:43] ✅ Added source url to research: https://kanerika.com/blogs/langchain-vs-langgraph/
+
+INFO:     [20:05:43] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:43] 🌐 Scraping content from 5 URLs...
+INFO:     [20:05:43] ✅ Added source url to research: https://medium.com/@tahirbalarabe2/%EF%B8%8Flangchain-vs-langgraph-a-comparative-analysis-ce7749a80d9c
+
+INFO:     [20:05:43] ✅ Added source url to research: https://contra.com/community/h7VqZe2l-lang-graph-vs-lang-chain-mastering-complex-workflows
+
+INFO:     [20:05:43] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:43] 🌐 Scraping content from 2 URLs...
+Content too short or empty for https://www.reddit.com/r/LangChain/comments/1rnc2u9/comprehensive_comparison_of_every_ai_agent/
+INFO:     [20:05:43] 🗂️ I will conduct my research based on the following queries: ['agentic AI business adoption trends 2026 enterprise deployment', 'autonomous AI industry impact North America EU AI Act compliance 2026', 'future of agentic AI in enterprise software market growth and production challenges 2026', '(agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)']...
+INFO:     [20:05:43] 
+🔍 Running research for 'agentic AI business adoption trends 2026 enterprise deployment'...
+INFO:     [20:05:43] 
+🔍 Running research for 'autonomous AI industry impact North America EU AI Act compliance 2026'...
+INFO:     [20:05:43] 
+🔍 Running research for 'future of agentic AI in enterprise software market growth and production challenges 2026'...
+INFO:     [20:05:43] 
+🔍 Running research for '(agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)'...
+Content too short or empty for https://medium.com/@puttt.spl/langchain-vs-langgraph-the-complete-tutorial-what-they-are-when-to-use-each-and-whether-you-7cd5e7c4cbe2
+Content too short or empty for https://medium.com/data-science-collective/finally-we-have-answer-between-autogen-and-semantic-kernel-its-microsoft-agent-framework-071e84e0923b
+Content too short or empty for https://medium.com/microsoftazure/semantic-kernel-vs-autogen-which-microsoft-ai-framework-fits-your-needs-a4de90ef4045
+Content too short or empty for https://medium.com/@tahirbalarabe2/%EF%B8%8Flangchain-vs-langgraph-a-comparative-analysis-ce7749a80d9c
+INFO:     [20:05:44] ✅ Added source url to research: https://vegavid.com/blog/langchain-vs-langgraph-vs-langsmith
+
+INFO:     [20:05:44] ✅ Added source url to research: https://python.plainenglish.io/langgraph-vs-langchain-which-framework-you-should-use-in-2026-73128b617121
+
+INFO:     [20:05:44] ✅ Added source url to research: https://www.reddit.com/r/LangChain/comments/1rnc2u9/comprehensive_comparison_of_every_ai_agent/
+
+INFO:     [20:05:44] ✅ Added source url to research: https://www.linkedin.com/posts/saurabh-ranjan-54b68474_langchain-vs-langgraph-which-framework-activity-7420139397960003584-cXfL
+
+INFO:     [20:05:44] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:44] 🌐 Scraping content from 4 URLs...
+INFO:     [20:05:44] 📄 Scraped 5 pages of content
+INFO:     [20:05:44] 🖼️ Selected 4 new images from 23 total images
+INFO:     [20:05:44] 🌐 Scraping complete
+INFO:     [20:05:44] 📚 Getting relevant content based on query: (LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)...
+INFO:     [20:05:44] ✅ Added source url to research: https://www.alphabold.com/langgraph-agents-in-production/
+
+INFO:     [20:05:44] ✅ Added source url to research: https://python.plainenglish.io/autogen-vs-crewai-vs-langgraph-2026-comparison-guide-fd8490397977
+
+INFO:     [20:05:44] ✅ Added source url to research: https://www.truefoundry.com/blog/langchain-vs-langgraph
+
+INFO:     [20:05:44] ✅ Added source url to research: https://www.digitalapplied.com/blog/ai-workflow-orchestration-platforms-comparison
+
+INFO:     [20:05:44] ✅ Added source url to research: https://medium.com/aimonks/building-agents-with-langgraph-human-in-the-loop-interactions-that-actually-work-in-production-d7d038625260
+
+INFO:     [20:05:44] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:44] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://python.plainenglish.io/langgraph-vs-langchain-which-framework-you-should-use-in-2026-73128b617121
+Content too short or empty for https://www.reddit.com/r/LangChain/comments/1rnc2u9/comprehensive_comparison_of_every_ai_agent/
+Content too short or empty for https://medium.com/aimonks/building-agents-with-langgraph-human-in-the-loop-interactions-that-actually-work-in-production-d7d038625260
+Content too short or empty for https://sparkco.ai/blog/ai-agent-frameworks-compared-langchain-autogen-crewai-and-openclaw-in-2026
+INFO:     [20:05:44] 📄 Scraped 1 pages of content
+INFO:     [20:05:44] 🖼️ Selected 1 new images from 1 total images
+INFO:     [20:05:44] 🌐 Scraping complete
+INFO:     [20:05:44] 📚 Getting relevant content based on query: Microsoft Agent Framework vs LangChain vs CrewAI 2026 security and scalability comparison...
+Content too short or empty for https://python.plainenglish.io/autogen-vs-crewai-vs-langgraph-2026-comparison-guide-fd8490397977
+INFO:     [20:05:44] ✅ Added source url to research: https://www.digitalapplied.com/blog/ai-predictions-2026-trends-forecast
+
+INFO:     [20:05:44] ✅ Added source url to research: https://finance.yahoo.com/news/agentic-ai-market-enters-high-150500652.html
+
+INFO:     [20:05:44] ✅ Added source url to research: https://acropolium.com/blog/agentic-ai-trends/
+
+INFO:     [20:05:44] ✅ Added source url to research: https://www.youtube.com/watch?v=_gG7JOAQfr8
+
+INFO:     [20:05:44] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:44] 🌐 Scraping content from 4 URLs...
+INFO:     [20:05:44] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:44] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:45] 📄 Scraped 3 pages of content
+INFO:     [20:05:45] 🖼️ Selected 4 new images from 13 total images
+INFO:     [20:05:45] 🌐 Scraping complete
+INFO:     [20:05:45] 📚 Getting relevant content based on query: (Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)...
+Content too short or empty for https://www.alphabold.com/langgraph-agents-in-production/
+Content too short or empty for https://www.youtube.com/watch?v=_gG7JOAQfr8
+INFO:     [20:05:45] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:45] 📄 Scraped 4 pages of content
+INFO:     [20:05:45] 🖼️ Selected 4 new images from 16 total images
+INFO:     [20:05:45] 🌐 Scraping complete
+INFO:     [20:05:45] 📚 Getting relevant content based on query: LangChain and LangGraph comparison for reasoning tasks and tool use...
+INFO:     [20:05:45] ✅ Added source url to research: https://www.crossml.com/agentic-ai-is-redefining-enterprise-workflows/
+
+INFO:     [20:05:45] ✅ Added source url to research: https://finance.yahoo.com/news/7-agentic-ai-trends-shaping-133500708.html
+
+INFO:     [20:05:45] ✅ Added source url to research: https://almcorp.com/blog/agentic-ai-enterprise-marketing-playbook-2026/
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.linkedin.com/pulse/agentic-ai-news-what-enterprise-leaders-must-understand-autonomous-mo59c
+
+INFO:     [20:05:45] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:45] 🌐 Scraping content from 4 URLs...
+INFO:     [20:05:45] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:45] 📄 Scraped 1 pages of content
+INFO:     [20:05:45] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:05:45] 🌐 Scraping complete
+INFO:     [20:05:45] 📚 Getting relevant content based on query: differences between LangGraph and LangChain in complex workflow management...
+INFO:     [20:05:45] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:45] ✅ Added source url to research: https://www.record-courier.com/press-release/story/49721/vision-compliance-releases-2026-eu-ai-act-readiness-report-finds-78-of-enterprises-unprepared-for-obligations/
+
+INFO:     [20:05:45] ✅ Added source url to research: https://interfacing.com/eu-ai-act-compliance
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.sciencedirect.com/science/article/pii/S0950584925002034
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.acc.com/sites/default/files/program-materials/upload/Foley-Lardner.pdf
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.linkedin.com/posts/earthlinginteractive_aiconsulting-aigovernance-customsoftwaredevelopment-activity-7437852642174943232-FbJe
+
+INFO:     [20:05:45] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:45] 🌐 Scraping content from 5 URLs...
+INFO:     [20:05:45] ✅ Added source url to research: https://my.idc.com/getdoc.jsp?containerId=prUS53883425
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.forrester.com/blogs/predictions-2026-ai-agents-changing-business-models-and-workplace-culture-impact-enterprise-software/
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html
+
+INFO:     [20:05:45] ✅ Added source url to research: https://www.insentragroup.com/us/insights/not-geek-speak/generative-ai/agentic-ai-takes-the-wheel-a-deep-dive-into-2026/
+
+INFO:     [20:05:45] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:05:45] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.sciencedirect.com/science/article/pii/S0950584925002034
+INFO:     [20:05:46] 📄 Scraped 2 pages of content
+INFO:     [20:05:46] 🖼️ Selected 1 new images from 1 total images
+INFO:     [20:05:46] 🌐 Scraping complete
+INFO:     [20:05:46] 📚 Getting relevant content based on query: LangGraph vs LangChain multi-agent collaboration advantages 2026...
+INFO:     [20:05:46] 📄 Scraped 2 pages of content
+INFO:     [20:05:46] 🖼️ Selected 4 new images from 10 total images
+INFO:     [20:05:46] 🌐 Scraping complete
+INFO:     [20:05:46] 📚 Getting relevant content based on query: LangGraph production use cases 2026 advantages and limitations in dynamic agent orchestration...
+INFO:     [20:05:46] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:46] Finalized research step.
+💸 Total Research Costs: $0.03176652
+INFO:     [20:05:46] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:47] 📄 Scraped 3 pages of content
+INFO:     [20:05:47] 🖼️ Selected 4 new images from 13 total images
+INFO:     [20:05:47] 🌐 Scraping complete
+INFO:     [20:05:47] 📚 Getting relevant content based on query: AutoGen and Semantic Kernel unified framework benefits and drawbacks for multi-agent collaboration...
+Content too short or empty for https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-ai-in-the-enterprise.html
+INFO:     [20:05:47] 📄 Scraped 4 pages of content
+INFO:     [20:05:47] 🖼️ Selected 4 new images from 18 total images
+INFO:     [20:05:47] 🌐 Scraping complete
+INFO:     [20:05:47] 📚 Getting relevant content based on query: future of agentic AI in enterprise software market growth and production challenges 2026...
+INFO:     [20:05:47] 📄 Scraped 3 pages of content
+INFO:     [20:05:47] 🖼️ Selected 4 new images from 11 total images
+INFO:     [20:05:47] 🌐 Scraping complete
+INFO:     [20:05:47] 📚 Getting relevant content based on query: (agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)...
+Content too short or empty for https://almcorp.com/blog/agentic-ai-enterprise-marketing-playbook-2026/
+INFO:     [20:05:47] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:47] Finalized research step.
+💸 Total Research Costs: $0.028173800000000002
+INFO:     [20:05:48] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:48] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:48] 📄 Scraped 3 pages of content
+INFO:     [20:05:48] 🖼️ Selected 4 new images from 7 total images
+INFO:     [20:05:48] 🌐 Scraping complete
+INFO:     [20:05:48] 📚 Getting relevant content based on query: agentic AI business adoption trends 2026 enterprise deployment...
+INFO:     [20:05:48] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:49] 📄 Scraped 4 pages of content
+INFO:     [20:05:49] 🖼️ Selected 4 new images from 21 total images
+INFO:     [20:05:49] 🌐 Scraping complete
+INFO:     [20:05:49] 📚 Getting relevant content based on query: autonomous AI industry impact North America EU AI Act compliance 2026...
+INFO:     [20:05:49] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:05:49] Finalized research step.
+💸 Total Research Costs: $0.016895100000000003
+INFO:     [20:06:13] 🔍 Starting the research task for '(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)'...
+INFO:     [20:06:13] 📈 Business Analyst Agent
+INFO:     [20:06:13] 🌐 Browsing the web to learn more about the task: (AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)...
+INFO:     [20:06:17] 🤔 Planning the research strategy and subtasks...
+INFO:     [20:06:19] 🗂️ I will conduct my research based on the following queries: ['AI customization business applications 2026 industry impact', 'context-based AI emerging technologies future trends in enterprise 2026', 'agentic AI systems vertical-specific models business transformation 2026', '(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)']...
+INFO:     [20:06:19] 
+🔍 Running research for 'AI customization business applications 2026 industry impact'...
+INFO:     [20:06:19] 
+🔍 Running research for 'context-based AI emerging technologies future trends in enterprise 2026'...
+INFO:     [20:06:19] 
+🔍 Running research for 'agentic AI systems vertical-specific models business transformation 2026'...
+INFO:     [20:06:19] 
+🔍 Running research for '(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)'...
+INFO:     [20:06:20] ✅ Added source url to research: https://evrimagaci.org/gpt/ai-and-digital-trends-reshape-global-business-in-2026-526977?srsltid=AfmBOoroVbFwECu-Pft-u44eSL3T6a2GxqxwJerU7usZFzd3HJP_pTRx
+
+INFO:     [20:06:20] ✅ Added source url to research: https://sisgain.com/blogs/ai-trends
+
+INFO:     [20:06:20] ✅ Added source url to research: https://www.youtube.com/watch?v=DThxxiXUGw8
+
+INFO:     [20:06:20] ✅ Added source url to research: https://www.appmaisters.com/ai-trends-shaping-business-transformation-2026/
+
+INFO:     [20:06:20] ✅ Added source url to research: https://sloanreview.mit.edu/video/ai-trends-in-2026-key-insights-for-leaders/
+
+INFO:     [20:06:20] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:06:20] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://www.youtube.com/watch?v=DThxxiXUGw8
+INFO:     [20:06:21] ✅ Added source url to research: https://medium.com/@aitechtoolbox48/beyond-the-hype-how-ai-will-transform-business-by-2026-94adcf0cdb9c
+
+INFO:     [20:06:21] ✅ Added source url to research: https://www.linkedin.com/pulse/why-ai-driven-custom-software-game-changer-businesses-saurabh-somani-vynje
+
+INFO:     [20:06:21] ✅ Added source url to research: https://customprinthouse.us/blogs/news/how-ai-and-personalization-are-changing-custom-printing-in-2026?srsltid=AfmBOoq9Wue-1OnhjhufM_DjHKdmiAyqkekuPvEeIH2oghIel9h6c3MV
+
+INFO:     [20:06:21] ✅ Added source url to research: https://terralogic.com/ai-applications-in-business-trends-opportunities-challenges-2026/
+
+INFO:     [20:06:21] ✅ Added source url to research: https://stellium.consulting/articles/news/ai-impact-in-business/
+
+INFO:     [20:06:21] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:06:21] 🌐 Scraping content from 5 URLs...
+Content too short or empty for https://medium.com/@aitechtoolbox48/beyond-the-hype-how-ai-will-transform-business-by-2026-94adcf0cdb9c
+INFO:     [20:06:21] ✅ Added source url to research: https://www.future-processing.com/blog/ai-predictions-2026/
+
+INFO:     [20:06:21] ✅ Added source url to research: https://8allocate.com/blog/top-50-agentic-ai-implementations-use-cases-to-learn-from/
+
+INFO:     [20:06:21] ✅ Added source url to research: https://www.linkedin.com/pulse/how-agentic-ai-remodel-business-planning-2026-kreatetechnologies-vecgc
+
+INFO:     [20:06:21] ✅ Added source url to research: https://www.forbes.com/sites/markminevich/2025/12/31/agentic-ai-takes-over-11-shocking-2026-predictions/
+
+INFO:     [20:06:21] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:06:21] 🌐 Scraping content from 4 URLs...
+INFO:     [20:06:21] ✅ Added source url to research: https://askme360.ai/blog/context-aware-ai-enterprise-decisions-2026/
+
+INFO:     [20:06:21] ✅ Added source url to research: https://www.abbyy.com/intelligent-enterprise/6-enterprise-ai-trends-2026/
+
+INFO:     [20:06:21] ✅ Added source url to research: https://www.imd.org/blog/digital-transformation/emerging-technologies/
+
+INFO:     [20:06:21] 🤔 Researching for relevant information across multiple sources...
+
+INFO:     [20:06:21] 🌐 Scraping content from 3 URLs...
+Content too short or empty for https://www.forbes.com/sites/markminevich/2025/12/31/agentic-ai-takes-over-11-shocking-2026-predictions/
+INFO:     [20:06:22] 📄 Scraped 4 pages of content
+INFO:     [20:06:22] 🖼️ Selected 4 new images from 15 total images
+INFO:     [20:06:22] 🌐 Scraping complete
+INFO:     [20:06:22] 📚 Getting relevant content based on query: (AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)...
+Content too short or empty for https://www.future-processing.com/blog/ai-predictions-2026/
+Content too short or empty for https://stellium.consulting/articles/news/ai-impact-in-business/
+INFO:     [20:06:23] 📄 Scraped 3 pages of content
+INFO:     [20:06:23] 🖼️ Selected 4 new images from 11 total images
+INFO:     [20:06:23] 🌐 Scraping complete
+INFO:     [20:06:23] 📚 Getting relevant content based on query: AI customization business applications 2026 industry impact...
+INFO:     [20:06:23] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:06:24] 📄 Scraped 2 pages of content
+INFO:     [20:06:24] 🖼️ Selected 4 new images from 11 total images
+INFO:     [20:06:24] 🌐 Scraping complete
+INFO:     [20:06:24] 📚 Getting relevant content based on query: agentic AI systems vertical-specific models business transformation 2026...
+INFO:     [20:06:24] 📄 Scraped 3 pages of content
+INFO:     [20:06:24] 🖼️ Selected 2 new images from 2 total images
+INFO:     [20:06:24] 🌐 Scraping complete
+INFO:     [20:06:24] 📚 Getting relevant content based on query: context-based AI emerging technologies future trends in enterprise 2026...
+INFO:     [20:06:24] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:06:24] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:06:24] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:06:24] Finalized research step.
+💸 Total Research Costs: $0.0244267
+INFO:     [20:08:54] 📄 Scraped 4 pages of content
+INFO:     [20:08:54] 🖼️ Selected 2 new images from 2 total images
+INFO:     [20:08:54] 🌐 Scraping complete
+INFO:     [20:08:54] 📚 Getting relevant content based on query: ("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")...
+INFO:     [20:08:54] 📚 Combined research context: 0 MCP sources, web content
+INFO:     [20:08:54] Finalized research step.
+💸 Total Research Costs: $0.0194895
+[progress] depth=1/2 breadth=0/5 queries=0/5 current=starting
+[progress] depth=1/2 breadth=0/5 queries=0/5 current=(open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)
+[progress] depth=1/2 breadth=0/5 queries=0/5 current=(top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)
+[progress] depth=1/2 breadth=0/5 queries=0/5 current=(open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)
+[progress] depth=1/2 breadth=0/5 queries=0/5 current=(top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)
+Error! : HTTPSConnectionPool(host='levelup.gitconnected.com', port=443): Max retries exceeded with url: /10-modern-agentic-ai-tools-developers-should-explore-in-2026-27ce3b08e2e1 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : HTTPSConnectionPool(host='www.firecrawl.dev', port=443): Read timed out. (read timeout=4)
+Error! : HTTPSConnectionPool(host='blog.temok.com', port=443): Read timed out. (read timeout=4)
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error parsing dimension value auto: invalid literal for int() with base 10: 'auto'
+Error parsing dimension value auto: invalid literal for int() with base 10: 'auto'
+Error! : HTTPSConnectionPool(host='www.temok.com', port=443): Read timed out. (read timeout=4)
+Error! : HTTPSConnectionPool(host='www.agentframeworkhub.com', port=443): Read timed out. (read timeout=4)
+Error! : HTTPSConnectionPool(host='www.temok.com', port=443): Read timed out. (read timeout=4)
+[progress] depth=1/2 breadth=1/5 queries=1/5 current=(top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)
+[progress] depth=1/2 breadth=1/5 queries=1/5 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+[progress] depth=1/2 breadth=2/5 queries=2/5 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+[progress] depth=1/2 breadth=3/5 queries=3/5 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+[progress] depth=1/2 breadth=4/5 queries=4/5 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+[progress] depth=1/2 breadth=5/5 queries=5/5 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+[progress] depth=1/2 breadth=5/5 queries=5/13 current=(emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+[progress] depth=1/2 breadth=5/5 queries=5/13 current=(LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)
+[progress] depth=1/2 breadth=5/5 queries=5/13 current=(AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)
+[progress] depth=1/2 breadth=5/5 queries=5/13 current=("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")
+[progress] depth=1/2 breadth=5/5 queries=5/13 current=(("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : HTTPSConnectionPool(host='levelup.gitconnected.com', port=443): Max retries exceeded with url: /how-software-development-is-changing-with-agentic-coding-4e9d48b7d0fd (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error parsing dimension value Auto: invalid literal for int() with base 10: 'Auto'
+[progress] depth=1/2 breadth=6/5 queries=6/13 current=(("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")
+[progress] depth=1/2 breadth=6/5 queries=6/13 current=(LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)
+[progress] depth=1/2 breadth=7/5 queries=7/13 current=(LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)
+[progress] depth=1/2 breadth=7/5 queries=7/13 current=(Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)
+[progress] depth=1/2 breadth=8/5 queries=8/13 current=(Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)
+[progress] depth=1/2 breadth=8/5 queries=8/13 current=(agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)
+Error parsing dimension value Auto: invalid literal for int() with base 10: 'Auto'
+Error parsing dimension value 317.77777777777777: invalid literal for int() with base 10: '317.77777777777777'
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error parsing dimension value Auto: invalid literal for int() with base 10: 'Auto'
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+[progress] depth=1/2 breadth=9/5 queries=9/13 current=(agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)
+[progress] depth=1/2 breadth=9/5 queries=9/13 current=(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+[progress] depth=1/2 breadth=10/5 queries=10/13 current=(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+[progress] depth=1/2 breadth=11/5 queries=11/13 current=(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+Error! : ('Received response with content-encoding: br, but failed to decode it.', error("brotli: decoder process called with data when 'can_accept_more_data()' is False"))
+[progress] depth=1/2 breadth=12/5 queries=12/13 current=(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+[progress] depth=1/2 breadth=13/5 queries=13/13 current=(AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+
+Summary
+Query: Compare the top 5 open source LLM frameworks for building production AI agents in 2025
+Params: breadth=5, depth=2, concurrency_limit=4, tone=Informative
+Token usage: {'prompt_tokens': 145184, 'completion_tokens': 22114, 'total_tokens': 167298, 'call_count': 20, 'error_count': 1, 'errors': ['Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=4000, prompt_tokens=214, total_tokens=4214, completion_tokens_details=None, prompt_tokens_details=None)']}
+Elapsed time: 606.42s
+Output path: /Users/apple/Downloads/gpt-researcher/.claude/worktrees/feature+arxiv-search/outputs/demo_wide_survey_report.md

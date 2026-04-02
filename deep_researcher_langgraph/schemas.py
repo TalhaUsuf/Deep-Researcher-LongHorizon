@@ -8,6 +8,8 @@ class SearchQueryItem(BaseModel):
     """A search query paired with its research goal."""
     query: str = Field(description="A specific search query to research the topic")
     research_goal: str = Field(description="The research goal this query aims to achieve")
+    path: str = Field(default="", description="Tree path for hierarchical ordering")
+    parent_topic: str = Field(default="", description="Parent section topic")
 
 
 class SearchQueriesResponse(BaseModel):

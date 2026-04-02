@@ -28,9 +28,17 @@ load_dotenv()
 from .callbacks import TokenUsageCallbackHandler
 from .graph import build_deep_research_graph
 from .llm_service import LLMService
+from .nodes import assemble_final_context, generate_report
 from .state import DeepResearchState, ResearchProgress
 
 logger = logging.getLogger(__name__)
+
+WALL_CLOCK_TIMEOUT_SECONDS = 30 * 60
+
+
+def _validate_positive_int(name: str, value: int) -> None:
+    if not isinstance(value, int) or value < 1:
+        raise ValueError(f"{name} must be a positive integer, got {value!r}")
 
 
 async def run_deep_research(
@@ -78,9 +86,17 @@ async def run_deep_research(
 
     cfg = Config(config_path)
     # Match original defaults: breadth=4, depth=2, concurrency=2
-    breadth = breadth or getattr(cfg, "deep_research_breadth", 4)
-    depth = depth or getattr(cfg, "deep_research_depth", 2)
-    concurrency_limit = concurrency_limit or getattr(cfg, "deep_research_concurrency", 2)
+    breadth = getattr(cfg, "deep_research_breadth", 4) if breadth is None else breadth
+    depth = getattr(cfg, "deep_research_depth", 2) if depth is None else depth
+    concurrency_limit = (
+        getattr(cfg, "deep_research_concurrency", 2)
+        if concurrency_limit is None
+        else concurrency_limit
+    )
+
+    _validate_positive_int("breadth", breadth)
+    _validate_positive_int("depth", depth)
+    _validate_positive_int("concurrency_limit", concurrency_limit)
 
     logger.info(
         f"Starting LangGraph deep research: breadth={breadth}, depth={depth}, "
@@ -109,10 +125,8 @@ async def run_deep_research(
         "tone": tone,
         "config_path": config_path,
         "headers": headers or {},
-        "websocket": websocket,
         "mcp_configs": mcp_configs,
         "mcp_strategy": mcp_strategy,
-        "on_progress": on_progress,
         # Initialised by nodes
         "initial_search_results": [],
         "follow_up_questions": [],
@@ -121,7 +135,8 @@ async def run_deep_research(
         "current_breadth": 0,
         "search_queries": [],
         "research_results": [],
-        "branch_stack": [],
+        "pending_branches": [],
+        "research_tree": [],
         "all_learnings": [],
         "all_citations": {},
         "all_visited_urls": list(visited_urls) if visited_urls else [],
@@ -135,18 +150,44 @@ async def run_deep_research(
     }
 
     # Run the graph with thread_id for checkpointer persistence
+    graph_config = {
+        "configurable": {
+            "llm_service": llm_service,
+            "progress": progress,
+            "config": cfg,
+            "thread_id": thread_id,
+            "websocket": websocket,
+            "on_progress": on_progress,
+        }
+    }
+
     try:
-        result = await graph.ainvoke(
-            initial_state,
-            config={
-                "configurable": {
-                    "llm_service": llm_service,
-                    "progress": progress,
-                    "config": cfg,
-                    "thread_id": thread_id,
-                }
-            },
+        result = await asyncio.wait_for(
+            graph.ainvoke(initial_state, config=graph_config),
+            timeout=WALL_CLOCK_TIMEOUT_SECONDS,
         )
+    except asyncio.TimeoutError:
+        logger.warning(
+            "Deep research timed out after %s seconds; returning partial output.",
+            WALL_CLOCK_TIMEOUT_SECONDS,
+        )
+        try:
+            snapshot = await graph.aget_state(graph_config)
+            partial_state = dict(snapshot.values or {})
+        except Exception:
+            logger.warning("No checkpointer available for timeout recovery.")
+            partial_state = {}
+        if partial_state.get("research_tree") and not partial_state.get("final_context"):
+            partial_state.update(await assemble_final_context(partial_state, graph_config))
+        if partial_state.get("final_context") and not partial_state.get("report"):
+            try:
+                partial_state.update(await generate_report(partial_state, graph_config))
+            except Exception:
+                logger.warning(
+                    "Timeout recovery could not finish report generation; returning context only.",
+                    exc_info=True,
+                )
+        result = partial_state
     except Exception as e:
         logger.error(f"Deep research workflow failed: {e}", exc_info=True)
         raise RuntimeError(
@@ -165,7 +206,7 @@ async def run_deep_research(
         "final_context": result.get("final_context", ""),
         "visited_urls": result.get("all_visited_urls", []),
         "sources": result.get("all_sources", []),
-        "learnings": list(set(result.get("all_learnings", []))),
+        "learnings": list(dict.fromkeys(result.get("all_learnings", []))),
         "citations": result.get("all_citations", {}),
         "usage_summary": usage_summary,
         "thread_id": thread_id,

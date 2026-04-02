@@ -65,8 +65,11 @@ PROCESS_RESEARCH_RESULTS_PROMPT = ChatPromptTemplate.from_messages([
 GENERATE_REPORT_PROMPT = ChatPromptTemplate.from_messages([
     (
         "system",
-        "You are an expert research report writer. Write detailed, factual, and "
-        "unbiased reports based on provided research context and citations. "
+        "You are an expert research report writer. The research context below is "
+        "organized hierarchically with markdown headings (## for broad topics, "
+        "### for subtopics, #### for fine details). Preserve this heading hierarchy "
+        "in your report — each heading level represents a deeper level of research. "
+        "Write detailed, factual, and unbiased reports with citations. "
         "You MUST determine your own concrete and valid opinion based on the given "
         "information. Do NOT defer to general and meaningless conclusions."
     ),
@@ -77,11 +80,14 @@ GENERATE_REPORT_PROMPT = ChatPromptTemplate.from_messages([
         "Using the above information, answer the following query or task: "
         '"{query}" in a detailed report.\n\n'
         "The report should focus on the answer to the query, should be well structured, "
-        "informative, in-depth, and comprehensive, with facts and numbers if available "
-        "and at least 1200 words.\n"
+        "informative, in-depth, and comprehensive, with facts and numbers if available.\n"
         "You should strive to write the report as long as you can using all relevant "
         "and necessary information provided.\n\n"
         "Please follow all of the following guidelines in your report:\n"
+        "- Preserve the heading hierarchy from the context (## → ### → ####)\n"
+        "- Each top-level section (##) covers a broad aspect of the topic\n"
+        "- Sub-sections (###) cover specific areas within each aspect\n"
+        "- Detail sections (####) provide fine-grained findings\n"
         "- You MUST write the report with markdown syntax.\n"
         "- Structure your report with clear markdown headers: use # for the main title, "
         "## for major sections, and ### for subsections.\n"
