@@ -10,11 +10,9 @@ from deep_researcher_langgraph.nodes import (
     generate_search_queries,
     execute_research,
     fan_out_branches,
-    pick_next_branch,
     assemble_final_context,
     generate_report,
     should_continue_deeper,
-    has_more_work,
     _count_words,
     _trim_context,
     MAX_CONTEXT_WORDS,
@@ -144,10 +142,10 @@ class TestGenerateResearchPlan:
 
         assert result["all_learnings"] == []
         assert result["all_citations"] == {}
-        assert result["all_visited_urls"] == []
         assert result["all_context"] == []
         assert result["all_sources"] == []
-        assert result["branch_stack"] == []
+        assert result["pending_branches"] == []
+        assert result["research_tree"] == []
         assert result["total_queries"] == 0
         assert result["completed_queries"] == 0
 
@@ -237,9 +235,13 @@ class TestGenerateSearchQueries:
 
     async def test_breadth_one_level_deep_from_depth2(self, base_state, graph_config, llm_service):
         # depth=2, current_depth=1 -> levels_deep=1 -> breadth = max(2, 4//2) = 2
+        # At a deeper level, pending_branches must be provided
         base_state["depth"] = 2
         base_state["current_depth"] = 1
         base_state["breadth"] = 4
+        base_state["pending_branches"] = [
+            {"query": "branch query", "depth": 1, "path": "0", "parent_topic": "Test"}
+        ]
         result = await self._run(base_state, graph_config, llm_service, num_queries=10)
         assert len(result["search_queries"]) == 2
 
@@ -249,6 +251,9 @@ class TestGenerateSearchQueries:
         base_state["depth"] = 3
         base_state["current_depth"] = 1
         base_state["breadth"] = 4
+        base_state["pending_branches"] = [
+            {"query": "branch query", "depth": 1, "path": "0", "parent_topic": "Test"}
+        ]
         result = await self._run(base_state, graph_config, llm_service, num_queries=10)
         assert len(result["search_queries"]) == 2
 
@@ -308,7 +313,7 @@ class TestExecuteResearch:
         assert kwargs.kwargs["mcp_configs"] == [{"server": "s1"}]
         assert kwargs.kwargs["mcp_strategy"] == "parallel"
         assert kwargs.kwargs["config_path"] is None
-        assert kwargs.kwargs["websocket"] is None
+        assert kwargs.kwargs["websocket"] is None  # from config
         assert kwargs.kwargs["headers"] == {}
 
     @patch("deep_researcher_langgraph.nodes.GPTResearcher")
@@ -444,55 +449,39 @@ class TestExecuteResearch:
 class TestFanOutBranches:
     async def test_creates_one_branch_per_result(self, base_state, graph_config):
         base_state["research_results"] = [
-            {"research_goal": "goal1", "follow_up_questions": ["fu1"]},
-            {"research_goal": "goal2", "follow_up_questions": ["fu2"]},
+            {"research_goal": "goal1", "follow_up_questions": ["fu1"], "path": "0"},
+            {"research_goal": "goal2", "follow_up_questions": ["fu2"], "path": "1"},
         ]
         base_state["current_depth"] = 3
 
         result = await fan_out_branches(base_state, graph_config)
 
-        assert len(result["branch_stack"]) == 2
+        assert len(result["pending_branches"]) == 2
 
-    async def test_pushes_on_top_of_existing_stack(self, base_state, graph_config):
-        base_state["branch_stack"] = [{"query": "existing", "depth": 1}]
+    async def test_inherits_path_from_parent(self, base_state, graph_config):
         base_state["research_results"] = [
-            {"research_goal": "new_goal", "follow_up_questions": ["fu"]},
+            {"research_goal": "new_goal", "follow_up_questions": ["fu"], "path": "2"},
         ]
         base_state["current_depth"] = 3
 
         result = await fan_out_branches(base_state, graph_config)
 
-        # New items on top, existing at bottom
-        assert result["branch_stack"][-1]["query"] == "existing"
-        assert "new_goal" in result["branch_stack"][0]["query"]
-
-    async def test_reverses_results_so_first_is_on_top(self, base_state, graph_config):
-        base_state["research_results"] = [
-            {"research_goal": "first", "follow_up_questions": []},
-            {"research_goal": "second", "follow_up_questions": []},
-            {"research_goal": "third", "follow_up_questions": []},
-        ]
-        base_state["current_depth"] = 2
-
-        result = await fan_out_branches(base_state, graph_config)
-
-        # After reversing in the loop, first result should be on top (index 0)
-        assert "first" in result["branch_stack"][0]["query"]
-        assert "third" in result["branch_stack"][2]["query"]
+        assert result["pending_branches"][0]["path"] == "2"
+        assert result["pending_branches"][0]["parent_topic"] == "new_goal"
 
     async def test_each_branch_has_correct_depth(self, base_state, graph_config):
         base_state["research_results"] = [
-            {"research_goal": "g", "follow_up_questions": []},
+            {"research_goal": "g", "follow_up_questions": [], "path": "0"},
         ]
         base_state["current_depth"] = 5
 
         result = await fan_out_branches(base_state, graph_config)
 
-        assert result["branch_stack"][0]["depth"] == 4  # current_depth - 1
+        assert result["pending_branches"][0]["depth"] == 4  # current_depth - 1
 
     async def test_clears_research_results(self, base_state, graph_config):
         base_state["research_results"] = [
-            {"research_goal": "g", "follow_up_questions": []},
+            {"research_goal": "g", "follow_up_questions": [], "path": "0"},
         ]
         base_state["current_depth"] = 2
 
@@ -502,54 +491,15 @@ class TestFanOutBranches:
 
     async def test_branch_query_format(self, base_state, graph_config):
         base_state["research_results"] = [
-            {"research_goal": "my goal", "follow_up_questions": ["q1?", "q2?"]},
+            {"research_goal": "my goal", "follow_up_questions": ["q1?", "q2?"], "path": "0"},
         ]
         base_state["current_depth"] = 2
 
         result = await fan_out_branches(base_state, graph_config)
 
-        query = result["branch_stack"][0]["query"]
+        query = result["pending_branches"][0]["query"]
         assert "Previous research goal: my goal" in query
         assert "Follow-up questions: q1? q2?" in query
-
-
-# ---------------------------------------------------------------------------
-# Node: pick_next_branch
-# ---------------------------------------------------------------------------
-
-
-@pytest.mark.asyncio
-class TestPickNextBranch:
-    async def test_pops_from_top_of_stack(self, base_state, graph_config):
-        base_state["branch_stack"] = [
-            {"query": "top_query", "depth": 2},
-            {"query": "bottom_query", "depth": 1},
-        ]
-
-        result = await pick_next_branch(base_state, graph_config)
-
-        assert result["combined_query"] == "top_query"
-        assert result["current_depth"] == 2
-
-    async def test_removes_popped_item(self, base_state, graph_config):
-        base_state["branch_stack"] = [
-            {"query": "top", "depth": 2},
-            {"query": "bottom", "depth": 1},
-        ]
-
-        result = await pick_next_branch(base_state, graph_config)
-
-        assert len(result["branch_stack"]) == 1
-        assert result["branch_stack"][0]["query"] == "bottom"
-
-    async def test_handles_empty_stack(self, base_state, graph_config):
-        base_state["branch_stack"] = []
-
-        result = await pick_next_branch(base_state, graph_config)
-
-        assert result["combined_query"] == ""
-        assert result["current_depth"] == 0
-        assert result["branch_stack"] == []
 
 
 # ---------------------------------------------------------------------------
@@ -560,10 +510,11 @@ class TestPickNextBranch:
 @pytest.mark.asyncio
 class TestAssembleFinalContext:
     async def test_deduplicates_learnings(self, base_state, graph_config, llm_service):
-        base_state["all_learnings"] = ["dup", "dup", "unique"]
-        base_state["all_citations"] = {}
+        base_state["research_tree"] = [
+            {"path": "0", "depth_level": 1, "topic": "t",
+             "learnings": ["dup", "dup", "unique"], "citations": {}, "context": ""},
+        ]
         base_state["all_context"] = []
-
 
         result = await assemble_final_context(base_state, graph_config)
 
@@ -572,31 +523,35 @@ class TestAssembleFinalContext:
         assert "unique" in result["final_context"]
 
     async def test_attaches_citations(self, base_state, graph_config, llm_service):
-        base_state["all_learnings"] = ["insight A", "insight B"]
-        base_state["all_citations"] = {"insight A": "http://source.com"}
+        base_state["research_tree"] = [
+            {"path": "0", "depth_level": 1, "topic": "t",
+             "learnings": ["insight A", "insight B"],
+             "citations": {"insight A": "http://source.com"}, "context": ""},
+        ]
         base_state["all_context"] = []
-
 
         result = await assemble_final_context(base_state, graph_config)
 
         assert "[Source: http://source.com]" in result["final_context"]
 
     async def test_extends_with_raw_context(self, base_state, graph_config, llm_service):
-        base_state["all_learnings"] = ["insight"]
-        base_state["all_citations"] = {}
+        base_state["research_tree"] = [
+            {"path": "0", "depth_level": 1, "topic": "t",
+             "learnings": ["insight"], "citations": {}, "context": ""},
+        ]
         base_state["all_context"] = ["raw context block"]
-
 
         result = await assemble_final_context(base_state, graph_config)
 
         assert "raw context block" in result["final_context"]
 
     async def test_trims_to_max_context_words(self, base_state, graph_config, llm_service):
-        # Create oversized context
         big_learning = " ".join(["word"] * 20000)
         big_context = " ".join(["extra"] * 20000)
-        base_state["all_learnings"] = [big_learning]
-        base_state["all_citations"] = {}
+        base_state["research_tree"] = [
+            {"path": "0", "depth_level": 1, "topic": "t",
+             "learnings": [big_learning], "citations": {}, "context": ""},
+        ]
         base_state["all_context"] = [big_context]
 
         result = await assemble_final_context(base_state, graph_config)
@@ -678,35 +633,21 @@ class TestGenerateReport:
 
 class TestShouldContinueDeeper:
     def test_returns_go_deeper_when_depth_gt_1(self):
-        state = {"current_depth": 2}
+        state = {"current_depth": 2, "research_results": [{"query": "test"}]}
         assert should_continue_deeper(state) == "go_deeper"
 
     def test_returns_go_deeper_when_depth_is_3(self):
-        state = {"current_depth": 3}
+        state = {"current_depth": 3, "research_results": [{"query": "test"}]}
         assert should_continue_deeper(state) == "go_deeper"
 
-    def test_returns_check_stack_when_depth_is_1(self):
+    def test_returns_done_when_depth_is_1(self):
         state = {"current_depth": 1}
-        assert should_continue_deeper(state) == "check_stack"
+        assert should_continue_deeper(state) == "done"
 
-    def test_returns_check_stack_when_depth_is_0(self):
+    def test_returns_done_when_depth_is_0(self):
         state = {"current_depth": 0}
-        assert should_continue_deeper(state) == "check_stack"
+        assert should_continue_deeper(state) == "done"
 
-    def test_returns_check_stack_when_depth_missing(self):
+    def test_returns_done_when_depth_missing(self):
         state = {}
-        assert should_continue_deeper(state) == "check_stack"
-
-
-class TestHasMoreWork:
-    def test_returns_next_branch_when_stack_non_empty(self):
-        state = {"branch_stack": [{"query": "q", "depth": 1}]}
-        assert has_more_work(state) == "next_branch"
-
-    def test_returns_done_when_stack_empty(self):
-        state = {"branch_stack": []}
-        assert has_more_work(state) == "done"
-
-    def test_returns_done_when_stack_missing(self):
-        state = {}
-        assert has_more_work(state) == "done"
+        assert should_continue_deeper(state) == "done"

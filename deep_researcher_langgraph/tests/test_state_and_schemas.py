@@ -181,11 +181,10 @@ class TestDeepResearchState:
         """base_state fixture should contain every key defined in the TypedDict."""
         expected_keys = {
             "query", "breadth", "depth", "concurrency_limit", "tone",
-            "config_path", "headers", "websocket", "mcp_configs", "mcp_strategy",
-            "on_progress",
+            "config_path", "headers", "mcp_configs", "mcp_strategy",
             "initial_search_results", "follow_up_questions", "combined_query",
             "current_depth", "current_breadth", "search_queries", "research_results",
-            "branch_stack",
+            "pending_branches", "research_tree",
             "all_learnings", "all_citations", "all_visited_urls", "all_context", "all_sources",
             "total_queries", "completed_queries",
             "final_context", "report",

@@ -98,7 +98,7 @@ class ResearchConductor:
         self.logger.info(f"Active retrievers: {retriever_names}")
         
         # Reset visited_urls and source_urls at the start of each research task
-        self.researcher.visited_urls.clear()
+        self.researcher.visited_urls = set(self.researcher.visited_urls or set())
         research_data = []
 
         if self.researcher.verbose:

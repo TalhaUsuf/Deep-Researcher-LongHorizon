@@ -167,7 +167,14 @@ class LLMService:
     async def invoke(self, llm: BaseChatModel, messages: list) -> str:
         """Invoke an LLM and return the string response with callback tracking."""
         response = await llm.ainvoke(messages, config={"callbacks": self.get_callbacks()})
-        return response.content
+        content = response.content
+        # Some providers return content as a list of blocks
+        if isinstance(content, list):
+            content = "\n".join(
+                block.get("text", "") if isinstance(block, dict) else str(block)
+                for block in content
+            )
+        return content
 
     def get_usage_summary(self) -> Dict[str, Any]:
         """Return accumulated token usage summary."""

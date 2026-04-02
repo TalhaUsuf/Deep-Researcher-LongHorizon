@@ -1,6 +1,6 @@
 """LangGraph state definitions for deep research workflow."""
 
-from typing import TypedDict, List, Dict, Any, Optional, Annotated, Callable
+from typing import TypedDict, List, Dict, Optional, Annotated
 import operator
 
 from langchain_core.messages import BaseMessage
@@ -9,6 +9,11 @@ from langgraph.graph.message import add_messages
 
 def _merge_dicts(a: Dict[str, str], b: Dict[str, str]) -> Dict[str, str]:
     return {**a, **b}
+
+
+def _merge_ordered_unique(a: List[str], b: List[str]) -> List[str]:
+    """Merge two lists preserving insertion order and removing duplicates."""
+    return list(dict.fromkeys([*a, *b]))
 
 
 class SearchQuery(TypedDict):
@@ -29,10 +34,22 @@ class ResearchResult(TypedDict):
     research_goal: str
 
 
+class TreeNode(TypedDict):
+    """A single node in the research tree, carrying its position and findings."""
+    path: str              # "0", "0.1", "1.0.2" etc.
+    depth_level: int       # which depth this was researched at (3=shallowest, 1=deepest)
+    topic: str             # research_goal — becomes section heading
+    learnings: List[str]
+    citations: Dict[str, str]
+    context: str
+
+
 class BranchItem(TypedDict):
-    """A single branch on the DFS stack: a query to research at a given depth."""
+    """A single branch item: a query to research at a given depth with tree position."""
     query: str
     depth: int
+    path: str            # tree path e.g. "0", "0.1", "1.0.2"
+    parent_topic: str    # research_goal of parent, becomes section heading
 
 
 class ResearchProgress:
@@ -57,10 +74,8 @@ class DeepResearchState(TypedDict):
     tone: str
     config_path: Optional[str]
     headers: dict
-    websocket: Any
     mcp_configs: Optional[list]
     mcp_strategy: Optional[str]
-    on_progress: Optional[Callable]
 
     # --- Research plan ---
     initial_search_results: List[dict]
@@ -73,19 +88,14 @@ class DeepResearchState(TypedDict):
     search_queries: List[SearchQuery]
     research_results: List[ResearchResult]
 
-    # --- Branch stack for tree recursion ---
-    # Stack of branch items. Each item holds a query and the depth at which
-    # it should be researched.  fan_out_branches pushes new items;
-    # pick_next_branch pops from the top.  This stack-based approach
-    # correctly models the original's recursive call-stack semantics so that
-    # sub-branches at depth N-1 are fully processed before sibling branches
-    # at depth N resume.
-    branch_stack: List[BranchItem]
+    # --- Pending branches for parallel execution ---
+    pending_branches: List[BranchItem]
 
     # --- Accumulated across levels ---
+    research_tree: Annotated[List[TreeNode], operator.add]
     all_learnings: Annotated[List[str], operator.add]
     all_citations: Annotated[Dict[str, str], _merge_dicts]
-    all_visited_urls: Annotated[List[str], operator.add]
+    all_visited_urls: Annotated[List[str], _merge_ordered_unique]
     all_context: Annotated[List[str], operator.add]
     all_sources: Annotated[List[dict], operator.add]
 

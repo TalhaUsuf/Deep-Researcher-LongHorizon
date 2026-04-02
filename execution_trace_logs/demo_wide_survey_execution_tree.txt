@@ -1,0 +1,131 @@
+ROOT: Compare the top 5 open source LLM frameworks for building production AI agents in 2025
+Params: breadth=5, depth=2, concurrency_limit=4, tone=Informative
+Config: retriever=tavily; FAST_LLM=openai:llama-3.1-70b; SMART_LLM=openai:llama-3.1-70b; STRATEGIC_LLM=openai:qwen3-235b
+Runtime: 606.42s
+|
+|- Phase: generate_research_plan
+|  |- Initial search via configured retriever (tavily)
+|  |- LLM call #1: structured follow-up-question generation
+|
+|- Phase: generate_search_queries (depth=2)
+|  |- LLM call #2: generated 5 root queries
+|  |- Root queries (observed start order):
+|  |  |- d2.q1 @ 20:01:47 | agent=AI Research Agent
+|  |  |  query: (open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: open-source autonomous coding agents challenges 2026
+|  |  |  |- sq2: limitations of open-source AI agent frameworks in day-to-day development workflows
+|  |  |  |- sq3: open-source AI agent frameworks comparison 2026 multi-agent collaboration tool integration
+|  |  |  |- sq4: (open-source autonomous coding agents OR open-source AI agent frameworks) AND (challenges OR limitations OR day-to-day development workflows)
+|  |  |- d2.q2 @ 20:01:52 | agent=AI Research Agent
+|  |  |  query: (top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: top 5 open-source AI agent frameworks 2025 reasoning tasks multi-agent collaboration tool use comparisons
+|  |  |  |- sq2: LangGraph AutoGen CrewAI Microsoft Agent Framework Google ADK Mastra open-source comparison 2025
+|  |  |  |- sq3: open-source AI agent frameworks 2025 reasoning multi-agent collaboration tool integration implications enterprise use
+|  |  |  |- sq4: (top 5 open-source AI agent frameworks 2025) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparisons OR implications)
+|  |  |- d2.q3 @ 20:01:58 | agent=AI Research Agent
+|  |  |  query: (top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: top AI agent frameworks 2025 production-ready comparison
+|  |  |  |- sq2: evolution of AI agent frameworks 2025 LangChain vs CrewAI vs AutoGen
+|  |  |  |- sq3: key differences between enterprise AI agent platforms 2026
+|  |  |  |- sq4: (top AI agent frameworks 2025) AND (evolution OR development OR production-ready) AND (key differences OR comparisons)
+|  |  |- d2.q4 @ 20:02:02 | agent=AI Research Agent
+|  |  |  query: (open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: open-source LLM frameworks multi-agent systems 2026 LangGraph CrewAI AutoGen
+|  |  |  |- sq2: best open-source AI agent frameworks 2026 advanced orchestration workflow design
+|  |  |  |- sq3: multi-agent AI frameworks 2025-2026 GitHub Lemon Agent MS-Agent Skills comparison
+|  |  |  |- sq4: (open-source LLM frameworks OR open-source AI agent frameworks) AND (multi-agent systems OR advanced orchestration OR workflow design) AND (2025 OR 2026)
+|  |  |- d2.q5 @ 20:02:43 | agent=AI Research Agent
+|  |  |  query: (emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: emerging trends in AI agent frameworks 2026 enterprise adoption
+|  |  |  |- sq2: future directions of autonomous AI systems in business automation 2025-2027
+|  |  |  |- sq3: agentic AI trends 2026 governance scalability and multi-agent collaboration
+|  |  |  |- sq4: (emerging trends OR future directions) AND (AI agent frameworks OR autonomous AI systems) AND (2025 OR 2026 OR 2027)
+|
+|- Phase: execute_research (depth=2, concurrency_limit=4)
+|  |- 5 nested GPTResearcher tasks completed at root depth
+|  |- LLM calls #3-#7: one result-analysis call per completed root query
+|
+|- Phase: fan_out_branches -> generate_search_queries (depth=1)
+|  |- 5 child-query-generation LLM attempts inferred from code + token usage
+|  |- 4 succeeded; 1 failed structured-output parsing at the max-token boundary
+|  |- Failure detail: completion_tokens=4000, prompt_tokens=214, total_tokens=4214
+|  |- Effective child queries observed: 8
+|
+|- Phase: execute_research (depth=1, concurrency_limit=4)
+|  |- Child queries (observed start order):
+|  |  |- d1.q1 @ 20:04:30 | agent=AI Research Agent
+|  |  |  query: (LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: LangGraph vs LangChain 2026 comparison for production use
+|  |  |  |- sq2: LangChain and LangGraph differences in multi-agent systems
+|  |  |  |- sq3: LangGraph built on LangChain advantages for stateful workflows
+|  |  |  |- sq4: (LangChain vs LangGraph) OR (LangChain comparison LangGraph) OR (LangGraph vs LangChain) OR (LangGraph comparison LangChain)
+|  |  |- d1.q2 @ 20:04:35 | agent=Tech Analyst Agent
+|  |  |  query: (("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: AI coding agents impact on software development economics 2026
+|  |  |  |- sq2: agentic coding tools benefits and challenges in modern software development
+|  |  |  |- sq3: future of software development with autonomous AI agents opportunities and limitations
+|  |  |  |- sq4: (("AI coding agents" OR "agentic coding tools") AND ("economics of software development" OR "impact on software development" OR "future of software development")) AND ("benefits" OR "limitations" OR "challenges" OR "opportunities")
+|  |  |- d1.q3 @ 20:04:41 | agent=AI Research Agent
+|  |  |  query: ("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: AI coding assistants vs autonomous coding agents 2026 comparison
+|  |  |  |- sq2: autonomous development tools key differences AI coding agents and assistants
+|  |  |  |- sq3: agentic AI coding frameworks comparison 2026 Devin Cursor Swfte
+|  |  |  |- sq4: ("AI coding assistants" OR "AI coding agents") AND ("autonomous coding" OR "autonomous development") AND ("key differences" OR "comparison")
+|  |  |- d1.q4 @ 20:04:44 | agent=AI Research Agent
+|  |  |  query: (AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: AutoGen multi-agent collaboration use cases 2026
+|  |  |  |- sq2: AutoGen asynchronous task execution with distributed tracing
+|  |  |  |- sq3: AutoGen distributed agent runtime persistent task execution Redis
+|  |  |  |- sq4: (AutoGen multi-agent collaboration) OR (AutoGen asynchronous task execution) OR (AutoGen multi-agent system) OR (AutoGen distributed task execution)
+|  |  |- d1.q5 @ 20:05:24 | agent=AI Research Agent
+|  |  |  query: (LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: LangGraph vs LangChain multi-agent collaboration advantages 2026
+|  |  |  |- sq2: LangChain and LangGraph comparison for reasoning tasks and tool use
+|  |  |  |- sq3: differences between LangGraph and LangChain in complex workflow management
+|  |  |  |- sq4: (LangGraph OR LangChain) AND (reasoning tasks OR multi-agent collaboration OR tool use) AND (comparison OR differences OR advantages)
+|  |  |- d1.q6 @ 20:05:31 | agent=AI Research Agent
+|  |  |  query: (Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: Microsoft Agent Framework vs LangChain vs CrewAI 2026 security and scalability comparison
+|  |  |  |- sq2: AutoGen and Semantic Kernel unified framework benefits and drawbacks for multi-agent collaboration
+|  |  |  |- sq3: LangGraph production use cases 2026 advantages and limitations in dynamic agent orchestration
+|  |  |  |- sq4: (Microsoft Agent Framework OR LangChain OR CrewAI OR AutoGen OR Semantic Kernel OR OpenAI Agents SDK) AND (security OR scalability OR collaborative use cases OR memory management OR dynamic multi-agent scenarios OR AI 'skills' orchestration) AND (benefits OR drawbacks OR advantages OR disadvantages)
+|  |  |- d1.q7 @ 20:05:38 | agent=Business Analyst Agent
+|  |  |  query: (agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: agentic AI business adoption trends 2026 enterprise deployment
+|  |  |  |- sq2: autonomous AI industry impact North America EU AI Act compliance 2026
+|  |  |  |- sq3: future of agentic AI in enterprise software market growth and production challenges 2026
+|  |  |  |- sq4: (agentic AI OR autonomous AI) AND (business adoption OR industry impact) AND (2026 OR future trends OR emerging technologies)
+|  |  |- d1.q8 @ 20:06:13 | agent=Business Analyst Agent
+|  |  |  query: (AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+|  |  |  nested plan_research -> 4 subqueries
+|  |  |  |- sq1: AI customization business applications 2026 industry impact
+|  |  |  |- sq2: context-based AI emerging technologies future trends in enterprise 2026
+|  |  |  |- sq3: agentic AI systems vertical-specific models business transformation 2026
+|  |  |  |- sq4: (AI customization OR context-based AI) AND (business applications OR industry impact) AND (2026 OR future trends OR emerging technologies)
+|  |- Remaining successful outer LLM calls covered 4 child-query generations, 8 child result analyses, and the final report call
+|
+|- Phase: assemble_final_context
+|  |- Triggered after progress reached queries=13/13
+|  |- Deduplicate + trim final context (inferred from deep_researcher_langgraph/nodes.py; not explicitly logged to console)
+|
+|- Phase: generate_report
+|  |- Final strategic LLM call succeeded
+|  |- Report written to: /Users/apple/Downloads/gpt-researcher/.claude/worktrees/feature+arxiv-search/outputs/demo_wide_survey_report.md
+|
+Notes:
+- Root/depth-1 task ordering is exact from the shared log stream.
+- The shared console log does not tag every URL/scrape batch with a stable task ID, so fine-grained URL->subquery attachment is only exact when the query name is printed in the log.
+- One depth-1 branch expansion failed, which reduced the effective child-query count from 10 to 8.
+- Progress lines flushed late; the final counters still provide exact outer-query totals.

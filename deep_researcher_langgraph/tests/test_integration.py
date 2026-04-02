@@ -219,7 +219,7 @@ class TestParameterResolution:
 class TestCallbackPlumbing:
 
     @pytest.mark.asyncio
-    async def test_on_progress_passed_in_state(self):
+    async def test_on_progress_passed_in_config(self):
         mock_cfg = _mock_config_cls()
         mock_g = _mock_graph()
         progress_cb = MagicMock()
@@ -233,8 +233,8 @@ class TestCallbackPlumbing:
             mock_llm_svc_cls.return_value.get_usage_summary.return_value = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0}
             await run_deep_research(query="q", on_progress=progress_cb)
 
-        invoked_state = mock_g.ainvoke.call_args[0][0]
-        assert invoked_state["on_progress"] is progress_cb
+        invoked_config = mock_g.ainvoke.call_args[0][1]
+        assert invoked_config["configurable"]["on_progress"] is progress_cb
 
     @pytest.mark.asyncio
     async def test_progress_tracker_in_config(self):
