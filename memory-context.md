@@ -159,7 +159,71 @@ Graph nodes: 7 → 6 (removed `pick_next_branch`, `has_more_work`)
 
 | Tier | Model | Endpoint |
 |------|-------|----------|
-| FAST_LLM | gpt-5.4-nano | OpenAI API standard |
-| SMART_LLM | gpt-5.4-mini | OpenAI API standard |
-| STRATEGIC_LLM | gpt-5.4 | OpenAI API standard |
+| FAST_LLM | llama-3.1-70b | http://69.48.159.10:30000/v1 |
+| SMART_LLM | llama-3.1-70b | http://69.48.159.10:30000/v1 |
+| STRATEGIC_LLM | qwen3-235b | http://69.48.159.8:30005/v1 |
 | EMBEDDING | Nexus_Embedding_Model_seq_8192_embd_1024 | http://69.48.159.8:30007/v1 |
+
+---
+
+## Session 3: Demo Scripts, Bug Fixes & Retriever Analysis (2026-04-02)
+
+Branch: `feature/parallel-deep-research` (merged to `main`)
+
+### What Was Done
+
+1. **4 demo research scripts** — Created standalone scripts demonstrating `run_deep_research()` with varying parameters:
+   - `scripts/demo_quick_exploratory.py` — depth=1, breadth=2 (quantum error correction)
+   - `scripts/demo_balanced_research.py` — depth=2, breadth=3 (transformers vs SSMs)
+   - `scripts/demo_deep_dive.py` — depth=3, breadth=2 (nuclear fusion vs fission)
+   - `scripts/demo_wide_survey.py` — depth=2, breadth=5 (LLM agent frameworks)
+
+2. **Bug fixes for local LLM compatibility**:
+   - **Empty report generation**: Switched report generation to strategic LLM (qwen3-235b) with 3-attempt retry logic
+   - **Structured output token exhaustion**: qwen3-235b's thinking tokens consumed max_tokens before producing JSON. Switched all `invoke_structured()` calls to smart LLM (llama-3.1-70b, no thinking overhead)
+   - **msgpack serialization**: MemorySaver checkpointer failed serializing functions in state. Removed default checkpointer; only used when explicitly provided
+
+3. **Retriever enhancement analysis** — Codex (gpt-5.4) produced `RETRIEVER_ENHANCEMENTS_FIX.md` documenting:
+   - All 14 retrievers with required env vars
+   - 7 integration gaps (no usable validation, silent Tavily fallback, single-retriever planning, etc.)
+   - File-by-file enhancement plan for multi-retriever deep research
+
+4. **Parallelism GIF animation** — `docs/static/img/deep-research-parallelism-b2-d3.gif` showing tree-based concurrent search for breadth=2, depth=3
+
+5. **Execution trace logs** — Full execution tree for wide survey (depth=2, breadth=5) showing exact query order, timing, and costs
+
+6. **Switched .env to local LLMs** — OpenAI API key quota exhausted; switched to local vLLM/SGLang endpoints
+
+### Bug Fix Details
+
+| Fix | File | Root Cause |
+|-----|------|------------|
+| Use strategic LLM + retry for reports | `nodes.py` | gpt-5.4-mini returned empty content for report generation |
+| Use smart LLM for all `invoke_structured()` | `nodes.py` | qwen3-235b thinking tokens exhaust max_tokens before JSON output |
+| Remove default MemorySaver checkpointer | `graph.py` | msgpack can't serialize function objects from GPTResearcher in state |
+| Graceful timeout recovery without checkpointer | `main.py` | `aget_state()` fails when no checkpointer is configured |
+
+### End-to-End Test Results
+
+| Script | Status | Tokens | Elapsed | Report Size |
+|--------|--------|--------|---------|-------------|
+| `demo_quick_exploratory.py` | ✅ Pass | 16,620 | 193s | 16KB |
+| `demo_wide_survey.py` | ✅ Pass | 167,298 | 606s | 17KB |
+| `demo_balanced_research.py` | ❌ Not completed (killed) | — | — | — |
+| `demo_deep_dive.py` | ❌ Not completed (killed) | — | — | — |
+
+### Key Files Created/Modified (This Session)
+
+| File | Change |
+|------|--------|
+| `scripts/demo_*.py` | 4 new demo scripts |
+| `deep_researcher_langgraph/nodes.py` | Smart LLM for structured output, strategic LLM + retry for reports |
+| `deep_researcher_langgraph/graph.py` | Removed default MemorySaver checkpointer |
+| `deep_researcher_langgraph/main.py` | Graceful timeout recovery without checkpointer |
+| `.env` | Switched to local LLM endpoints |
+| `RETRIEVER_ENHANCEMENTS_FIX.md` | Retriever gaps analysis + enhancement plan |
+| `docs/static/img/deep-research-parallelism-b2-d3.gif` | Parallelism animation |
+| `scripts/generate_deep_research_parallelism_gif.py` | GIF generator script |
+| `execution_trace_logs/` | Wide survey execution tree + full log |
+| `outputs/demo_quick_exploratory_*.md` | Quantum error correction report |
+| `outputs/demo_wide_survey_report.md` | LLM frameworks comparison report |
